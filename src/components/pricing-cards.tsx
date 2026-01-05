@@ -15,6 +15,7 @@ type Tab = "monthly" | "yearly";
 const PricingCards = () => {
 
     const MotionTabTrigger = motion(TabsTrigger);
+    
 
     const [activeTab, setActiveTab] = useState<Tab>("monthly");
 

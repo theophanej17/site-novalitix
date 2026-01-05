@@ -6,6 +6,12 @@ interface Props {
     }
 }
 
+export function generateStaticParams() {
+    return blogs.map((blog) => ({
+        slug: blog.slug,
+    }));
+}
+
 const BlogPage = ({ params }: Props) => {
 
     const blog = blogs.find((blog) => blog.slug === params.slug);
