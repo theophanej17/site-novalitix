@@ -11,7 +11,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className="scrollbar">
+        <html lang="fr" className="scrollbar">
+            <head>
+                <link rel="manifest" href="/site.webmanifest" />
+                <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+                <link rel="alternate icon" href="/favicon.ico" type="image/x-icon" />
+            </head>
             <body
                 className={cn(
                     "min-h-screen bg-background text-foreground antialiased !font-default overflow-x-hidden",
