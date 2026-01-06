@@ -16,11 +16,8 @@ const Footer = () => {
                             <Icons.logo className="w-7 h-7" />
                         </div>
                         <p className="text-muted-foreground mt-4 text-sm text-start">
-                            Manage your links with ease.
+                            Des agents IA conçus pour des environnements réels.
                         </p>
-                        <span className="mt-4 text-neutral-200 text-sm flex items-center">
-                            Made by <Link href="https://shreyas-sihasane.vercel.app/" className="font-semibold ml-1">Shreyas</Link>
-                        </span>
                     </div>
                 </AnimationContainer>
 
@@ -29,27 +26,27 @@ const Footer = () => {
                         <AnimationContainer delay={0.2}>
                             <div className="">
                                 <h3 className="text-base font-medium text-white">
-                                    Product
+                                    Solutions
                                 </h3>
                                 <ul className="mt-4 text-sm text-muted-foreground">
                                     <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Features
+                                        <Link href="/solutions/agents-conversationnels" className="hover:text-foreground transition-all duration-300">
+                                            Agents conversationnels
                                         </Link>
                                     </li>
                                     <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Pricing
+                                        <Link href="/solutions/agents-analyse" className="hover:text-foreground transition-all duration-300">
+                                            Agents d&apos;analyse
                                         </Link>
                                     </li>
                                     <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Testimonials
+                                        <Link href="/solutions/systemes-multi-agents" className="hover:text-foreground transition-all duration-300">
+                                            Systèmes multi-agents
                                         </Link>
                                     </li>
                                     <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Integration
+                                        <Link href="/solutions/agents-sur-mesure" className="hover:text-foreground transition-all duration-300">
+                                            Agents sur mesure
                                         </Link>
                                     </li>
                                 </ul>
@@ -58,27 +55,27 @@ const Footer = () => {
                         <AnimationContainer delay={0.3}>
                             <div className="mt-10 md:mt-0 flex flex-col">
                                 <h3 className="text-base font-medium text-white">
-                                    Integrations
+                                    Entreprise
                                 </h3>
                                 <ul className="mt-4 text-sm text-muted-foreground">
                                     <li className="">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Facebook
+                                        <Link href="/expertise" className="hover:text-foreground transition-all duration-300">
+                                            Expertise
                                         </Link>
                                     </li>
                                     <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Instagram
+                                        <Link href="/integration" className="hover:text-foreground transition-all duration-300">
+                                            Intégration
                                         </Link>
                                     </li>
                                     <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Twitter
+                                        <Link href="/methodologie" className="hover:text-foreground transition-all duration-300">
+                                            Méthodologie
                                         </Link>
                                     </li>
                                     <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            LinkedIn
+                                        <Link href="/a-propos" className="hover:text-foreground transition-all duration-300">
+                                            À propos
                                         </Link>
                                     </li>
                                 </ul>
@@ -89,17 +86,17 @@ const Footer = () => {
                         <AnimationContainer delay={0.4}>
                             <div className="">
                                 <h3 className="text-base font-medium text-white">
-                                    Resources
+                                    Ressources
                                 </h3>
                                 <ul className="mt-4 text-sm text-muted-foreground">
                                     <li className="mt-2">
-                                        <Link href="/resources/blog" className="hover:text-foreground transition-all duration-300">
+                                        <Link href="https://blog.novalitix.com/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-all duration-300">
                                             Blog
                                         </Link>
                                     </li>
                                     <li className="mt-2">
-                                        <Link href="/resources/help" className="hover:text-foreground transition-all duration-300">
-                                            Support
+                                        <Link href="https://event.novalitix.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-all duration-300">
+                                            Events
                                         </Link>
                                     </li>
                                 </ul>
@@ -108,22 +105,22 @@ const Footer = () => {
                         <AnimationContainer delay={0.5}>
                             <div className="mt-10 md:mt-0 flex flex-col">
                                 <h3 className="text-base font-medium text-white">
-                                    Company
+                                    Légal
                                 </h3>
                                 <ul className="mt-4 text-sm text-muted-foreground">
                                     <li className="">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            About Us
+                                        <Link href="/contact" className="hover:text-foreground transition-all duration-300">
+                                            Contact
                                         </Link>
                                     </li>
                                     <li className="mt-2">
                                         <Link href="/privacy" className="hover:text-foreground transition-all duration-300">
-                                            Privacy Policy
+                                            Politique de confidentialité
                                         </Link>
                                     </li>
                                     <li className="mt-2">
                                         <Link href="/terms" className="hover:text-foreground transition-all duration-300">
-                                            Terms & Conditions
+                                            Conditions d&apos;utilisation
                                         </Link>
                                     </li>
                                 </ul>

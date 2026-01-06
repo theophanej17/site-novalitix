@@ -52,7 +52,7 @@ const MethodologiePage = () => {
                     <div className="flex flex-col items-center justify-center w-full text-center py-12">
                         <MagicBadge title="Méthodologie" />
                         <h1 className="text-foreground text-center py-6 text-4xl font-medium tracking-normal text-balance sm:text-5xl md:text-6xl !leading-[1.15] w-full font-heading">
-                            Une méthode d&apos;ingénierie pour livrer <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text">
+                            Une méthode d&apos;ingénierie pour livrer <span className="text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">
                                 des agents fiables
                             </span>
                         </h1>
@@ -62,85 +62,59 @@ const MethodologiePage = () => {
                     </div>
                 </AnimationContainer>
 
-                <div className="space-y-8 pb-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-16">
                     {steps.map((step, index) => (
                         <AnimationContainer key={index} delay={0.2 + index * 0.1}>
-                            <Card className="p-6 md:p-8">
-                                <div className="flex flex-col md:flex-row gap-6">
-                                    <div className="flex-shrink-0">
-                                        <div className="w-16 h-16 rounded-full bg-gradient-to-r from-violet-500 to-fuchsia-500 flex items-center justify-center">
-                                            <span className="text-2xl font-bold text-white">{step.number}</span>
+                            <Card className="p-8 h-full border-border/50 bg-gradient-to-br from-background to-muted/20 hover:border-[#0071dc]/50 transition-all">
+                                <div className="flex flex-col h-full">
+                                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-r from-[#0071dc] to-[#fcb239] flex items-center justify-center mb-6">
+                                        <span className="text-2xl font-bold text-white">{step.number}</span>
+                                    </div>
+                                    <CardHeader className="p-0 mb-4">
+                                        <CardTitle className="text-xl">{step.title}</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="p-0 flex-1">
+                                        <p className="text-sm text-muted-foreground mb-6">
+                                            {step.description}
+                                        </p>
+                                        <div>
+                                            <h4 className="font-semibold mb-3 text-xs uppercase tracking-wide text-foreground">Livrables</h4>
+                                            <ul className="space-y-2">
+                                                {step.deliverables.map((deliverable, i) => (
+                                                    <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                                                        <CheckCircle2Icon className="w-4 h-4 text-[#0071dc] flex-shrink-0 mt-0.5" />
+                                                        <span>{deliverable}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
                                         </div>
-                                    </div>
-                                    <div className="flex-1">
-                                        <CardHeader className="p-0 mb-4">
-                                            <CardTitle className="text-2xl">{step.title}</CardTitle>
-                                        </CardHeader>
-                                        <CardContent className="p-0">
-                                            <p className="text-muted-foreground mb-6">
-                                                {step.description}
-                                            </p>
-                                            <div>
-                                                <h4 className="font-medium mb-3 text-sm uppercase tracking-wide">Livrables</h4>
-                                                <ul className="space-y-2">
-                                                    {step.deliverables.map((deliverable, i) => (
-                                                        <li key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
-                                                            <CheckCircle2Icon className="w-4 h-4 text-green-500 flex-shrink-0" />
-                                                            {deliverable}
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        </CardContent>
-                                    </div>
+                                    </CardContent>
                                 </div>
                             </Card>
                         </AnimationContainer>
                     ))}
                 </div>
 
-                <AnimationContainer delay={0.8}>
-                    <Card className="p-8 mb-16 bg-gradient-to-br from-violet-500/10 to-fuchsia-500/10 border-violet-500/20">
-                        <CardHeader className="p-0 mb-6">
-                            <CardTitle className="text-2xl">Ce qu&apos;on ne vend pas</CardTitle>
-                        </CardHeader>
-                        <CardContent className="p-0">
-                            <div className="grid md:grid-cols-3 gap-6">
-                                <div>
-                                    <h3 className="font-medium mb-2">❌ Promesses chiffrées non vérifiées</h3>
-                                    <p className="text-sm text-muted-foreground">
-                                        Pas de &quot;85% de réduction&quot; ou &quot;ROI garanti en 2 mois&quot; sans données réelles.
-                                    </p>
-                                </div>
-                                <div>
-                                    <h3 className="font-medium mb-2">❌ Remplacement total</h3>
-                                    <p className="text-sm text-muted-foreground">
-                                        Les agents assistent et automatisent, mais ne remplacent pas la supervision humaine.
-                                    </p>
-                                </div>
-                                <div>
-                                    <h3 className="font-medium mb-2">❌ Solutions magiques</h3>
-                                    <p className="text-sm text-muted-foreground">
-                                        Nous travaillons sur vos contraintes réelles : données, sécurité, intégration.
-                                    </p>
-                                </div>
-                            </div>
-                        </CardContent>
-                    </Card>
-                </AnimationContainer>
 
-                <AnimationContainer delay={0.9}>
+                <AnimationContainer delay={0.8}>
                     <div className="flex flex-col items-center justify-center text-center py-12">
                         <h2 className="text-3xl font-medium mb-4">Prêt à démarrer avec une approche rigoureuse ?</h2>
                         <p className="text-muted-foreground mb-6 max-w-2xl">
                             Discutons de votre projet et de la manière dont notre méthodologie peut s&apos;adapter à vos besoins.
                         </p>
-                        <Button asChild size="lg">
-                            <Link href="/contact">
-                                Parler à un expert
-                                <ArrowRightIcon className="w-4 h-4 ml-2" />
-                            </Link>
-                        </Button>
+                        <div className="flex gap-4">
+                            <Button asChild size="lg">
+                                <Link href="https://calix.novalitix.com/novalitix/15min" target="_blank" rel="noopener noreferrer">
+                                    Parler à un expert
+                                    <ArrowRightIcon className="w-4 h-4 ml-2" />
+                                </Link>
+                            </Button>
+                            <Button asChild size="lg" variant="outline">
+                                <Link href="/contact">
+                                    Décrivez-nous votre besoin
+                                </Link>
+                            </Button>
+                        </div>
                     </div>
                 </AnimationContainer>
             </MaxWidthWrapper>

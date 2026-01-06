@@ -1,9 +1,9 @@
 import { AnimationContainer, MaxWidthWrapper } from "@/components";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import MagicBadge from "@/components/ui/magic-badge";
 import MagicCard from "@/components/ui/magic-card";
-import { ArrowRightIcon, BrainIcon, ShieldCheckIcon, ZapIcon, NetworkIcon } from "lucide-react";
+import { ArrowRightIcon, BrainIcon, ShieldCheckIcon, ZapIcon, NetworkIcon, BoxIcon, ActivityIcon } from "lucide-react";
 import Link from "next/link";
 
 const ExpertisePage = () => {
@@ -14,7 +14,7 @@ const ExpertisePage = () => {
                     <div className="flex flex-col items-center justify-center w-full text-center py-12">
                         <MagicBadge title="Expertise" />
                         <h1 className="text-foreground text-center py-6 text-4xl font-medium tracking-normal text-balance sm:text-5xl md:text-6xl !leading-[1.15] w-full font-heading">
-                            Expertise en <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text">
+                            Expertise en <span className="text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">
                                 ingénierie agentique
                             </span>
                         </h1>
@@ -24,10 +24,10 @@ const ExpertisePage = () => {
                     </div>
                 </AnimationContainer>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-16">
                     <AnimationContainer delay={0.2}>
                         <MagicCard className="h-full p-8">
-                            <BrainIcon className="w-12 h-12 text-violet-500 mb-4" />
+                            <BrainIcon className="w-12 h-12 text-[#0071dc] mb-4" />
                             <CardHeader className="p-0 mb-4">
                                 <CardTitle className="text-xl">Conception d&apos;agents intelligents</CardTitle>
                             </CardHeader>
@@ -48,7 +48,7 @@ const ExpertisePage = () => {
 
                     <AnimationContainer delay={0.3}>
                         <MagicCard className="h-full p-8">
-                            <NetworkIcon className="w-12 h-12 text-fuchsia-500 mb-4" />
+                            <NetworkIcon className="w-12 h-12 text-[#fcb239] mb-4" />
                             <CardHeader className="p-0 mb-4">
                                 <CardTitle className="text-xl">Systèmes multi-agents</CardTitle>
                             </CardHeader>
@@ -69,7 +69,7 @@ const ExpertisePage = () => {
 
                     <AnimationContainer delay={0.4}>
                         <MagicCard className="h-full p-8">
-                            <ZapIcon className="w-12 h-12 text-blue-500 mb-4" />
+                            <ZapIcon className="w-12 h-12 text-[#0071dc] mb-4" />
                             <CardHeader className="p-0 mb-4">
                                 <CardTitle className="text-xl">Intégration & performance</CardTitle>
                             </CardHeader>
@@ -90,7 +90,7 @@ const ExpertisePage = () => {
 
                     <AnimationContainer delay={0.5}>
                         <MagicCard className="h-full p-8">
-                            <ShieldCheckIcon className="w-12 h-12 text-green-500 mb-4" />
+                            <ShieldCheckIcon className="w-12 h-12 text-[#fcb239] mb-4" />
                             <CardHeader className="p-0 mb-4">
                                 <CardTitle className="text-xl">Sécurité & gouvernance</CardTitle>
                             </CardHeader>
@@ -108,92 +108,328 @@ const ExpertisePage = () => {
                             </CardContent>
                         </MagicCard>
                     </AnimationContainer>
+
+                    <AnimationContainer delay={0.6}>
+                        <MagicCard className="h-full p-8">
+                            <BoxIcon className="w-12 h-12 text-[#0071dc] mb-4" />
+                            <CardHeader className="p-0 mb-4">
+                                <CardTitle className="text-xl">No-code & Low-code</CardTitle>
+                            </CardHeader>
+                            <CardContent className="p-0 space-y-4">
+                                <p className="text-sm text-muted-foreground">
+                                    Déploiement rapide d&apos;agents avec des plateformes no-code pour accélérer le time-to-market.
+                                </p>
+                                <ul className="space-y-2 text-sm text-muted-foreground">
+                                    <li>• Flowise, Dify, n8n</li>
+                                    <li>• Voiceflow pour agents conversationnels</li>
+                                    <li>• Intégrations Zapier, Make</li>
+                                    <li>• Configuration sans code</li>
+                                    <li>• Prototypage rapide</li>
+                                </ul>
+                            </CardContent>
+                        </MagicCard>
+                    </AnimationContainer>
+
+                    <AnimationContainer delay={0.7}>
+                        <MagicCard className="h-full p-8">
+                            <ActivityIcon className="w-12 h-12 text-[#fcb239] mb-4" />
+                            <CardHeader className="p-0 mb-4">
+                                <CardTitle className="text-xl">Observabilité</CardTitle>
+                            </CardHeader>
+                            <CardContent className="p-0 space-y-4">
+                                <p className="text-sm text-muted-foreground">
+                                    Surveillance en temps réel et analyse des performances de vos agents IA en production.
+                                </p>
+                                <ul className="space-y-2 text-sm text-muted-foreground">
+                                    <li>• Langfuse, LangSmith, Helicone</li>
+                                    <li>• Métriques de performance (latence, coûts)</li>
+                                    <li>• Traçabilité des prompts & outputs</li>
+                                    <li>• Dashboards personnalisés</li>
+                                    <li>• Alertes & notifications</li>
+                                </ul>
+                            </CardContent>
+                        </MagicCard>
+                    </AnimationContainer>
                 </div>
 
-                <AnimationContainer delay={0.6}>
-                    <Card className="p-8 mb-16">
-                        <CardHeader className="p-0 mb-6">
-                            <CardTitle className="text-2xl">Technologies & frameworks que nous utilisons</CardTitle>
-                        </CardHeader>
-                        <CardContent className="p-0">
-                            <div className="grid md:grid-cols-3 gap-8">
-                                <div>
-                                    <h3 className="font-medium mb-4">Frameworks agentiques</h3>
-                                    <ul className="space-y-2 text-sm text-muted-foreground">
-                                        <li>• LangChain / LangGraph</li>
-                                        <li>• LlamaIndex</li>
-                                        <li>• AutoGen (Microsoft)</li>
-                                        <li>• CrewAI</li>
-                                        <li>• Semantic Kernel</li>
-                                    </ul>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    {/* Column 1: Technologies */}
+                    <AnimationContainer delay={0.8}>
+                        <div className="h-full rounded-lg bg-black border border-zinc-800 p-8">
+                            <div className="mb-6">
+                                <MagicBadge title="Notre Stack Technologique" />
+                            </div>
+                            <h2 className="text-2xl font-medium mb-3">
+                                Les technologies qui propulsent vos agents IA
+                            </h2>
+                            <p className="text-sm text-muted-foreground mb-8">
+                                Nous maîtrisons les meilleurs frameworks et plateformes de l&apos;écosystème IA pour créer des solutions performantes, évolutives et adaptées à vos besoins spécifiques.
+                            </p>
+
+                            <div className="grid grid-cols-4 gap-4">
+                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                                    <div className="w-10 h-10 flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">LC</span>
+                                    </div>
+                                    <span className="text-[10px] text-center text-muted-foreground">LangChain</span>
                                 </div>
-                                <div>
-                                    <h3 className="font-medium mb-4">Modèles de langage</h3>
-                                    <ul className="space-y-2 text-sm text-muted-foreground">
-                                        <li>• OpenAI (GPT-4, GPT-4 Turbo)</li>
-                                        <li>• Anthropic (Claude 3.5)</li>
-                                        <li>• Google (Gemini Pro)</li>
-                                        <li>• Mistral AI</li>
-                                        <li>• Modèles open-source (Llama, etc.)</li>
-                                    </ul>
+                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                                    <div className="w-10 h-10 flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">OAI</span>
+                                    </div>
+                                    <span className="text-[10px] text-center text-muted-foreground">OpenAI</span>
                                 </div>
-                                <div>
-                                    <h3 className="font-medium mb-4">Infrastructure & tooling</h3>
-                                    <ul className="space-y-2 text-sm text-muted-foreground">
-                                        <li>• Python, TypeScript, Node.js</li>
-                                        <li>• Docker, Kubernetes</li>
-                                        <li>• PostgreSQL, MongoDB</li>
-                                        <li>• Redis (caching)</li>
-                                        <li>• Langfuse, LangSmith (observabilité)</li>
-                                    </ul>
+                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                                    <div className="w-10 h-10 flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">AI</span>
+                                    </div>
+                                    <span className="text-[10px] text-center text-muted-foreground">Anthropic</span>
+                                </div>
+                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                                    <div className="w-10 h-10 flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">V</span>
+                                    </div>
+                                    <span className="text-[10px] text-center text-muted-foreground">Vercel</span>
+                                </div>
+                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                                    <div className="w-10 h-10 flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">n8n</span>
+                                    </div>
+                                    <span className="text-[10px] text-center text-muted-foreground">n8n</span>
+                                </div>
+                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                                    <div className="w-10 h-10 flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">LI</span>
+                                    </div>
+                                    <span className="text-[10px] text-center text-muted-foreground">LlamaIndex</span>
+                                </div>
+                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                                    <div className="w-10 h-10 flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">AG</span>
+                                    </div>
+                                    <span className="text-[10px] text-center text-muted-foreground">AutoGen</span>
+                                </div>
+                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                                    <div className="w-10 h-10 flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">G</span>
+                                    </div>
+                                    <span className="text-[10px] text-center text-muted-foreground">Google AI</span>
+                                </div>
+                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                                    <div className="w-10 h-10 flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">▲</span>
+                                    </div>
+                                    <span className="text-[10px] text-center text-muted-foreground">Supabase</span>
+                                </div>
+                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                                    <div className="w-10 h-10 flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">P</span>
+                                    </div>
+                                    <span className="text-[10px] text-center text-muted-foreground">Pinecone</span>
+                                </div>
+                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                                    <div className="w-10 h-10 flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">AWS</span>
+                                    </div>
+                                    <span className="text-[10px] text-center text-muted-foreground">AWS</span>
+                                </div>
+                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                                    <div className="w-10 h-10 flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">C</span>
+                                    </div>
+                                    <span className="text-[10px] text-center text-muted-foreground">CrewAI</span>
+                                </div>
+                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                                    <div className="w-10 h-10 flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">LF</span>
+                                    </div>
+                                    <span className="text-[10px] text-center text-muted-foreground">Langfuse</span>
+                                </div>
+                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                                    <div className="w-10 h-10 flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">LS</span>
+                                    </div>
+                                    <span className="text-[10px] text-center text-muted-foreground">LangSmith</span>
+                                </div>
+                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                                    <div className="w-10 h-10 flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">GH</span>
+                                    </div>
+                                    <span className="text-[10px] text-center text-muted-foreground">GitHub</span>
+                                </div>
+                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                                    <div className="w-10 h-10 flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">M</span>
+                                    </div>
+                                    <span className="text-[10px] text-center text-muted-foreground">Mistral AI</span>
                                 </div>
                             </div>
-                        </CardContent>
-                    </Card>
-                </AnimationContainer>
+                        </div>
+                    </AnimationContainer>
 
-                <AnimationContainer delay={0.7}>
-                    <Card className="p-8 mb-16 bg-gradient-to-br from-violet-500/10 to-fuchsia-500/10 border-violet-500/20">
-                        <CardHeader className="p-0 mb-6">
-                            <CardTitle className="text-2xl">Notre approche technique</CardTitle>
-                        </CardHeader>
-                        <CardContent className="p-0">
+                    {/* Column 2: Security */}
+                    <AnimationContainer delay={0.85}>
+                        <div className="h-full rounded-lg bg-black border border-zinc-800 p-8">
+                            <div className="mb-6">
+                                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">
+                                    <ShieldCheckIcon className="w-4 h-4 text-emerald-500" />
+                                    <span className="text-xs font-medium text-emerald-500">Sécurité & Conformité</span>
+                                </div>
+                            </div>
+                            <h2 className="text-2xl font-medium mb-3">
+                                Sécurité en qui vous pouvez <span className="text-transparent bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text">avoir confiance</span>
+                            </h2>
+                            <p className="text-sm text-muted-foreground mb-8">
+                                Nous prenons la sécurité au sérieux. Nos agents IA sont conçus avec des garde-fous robustes et respectent les normes de conformité les plus strictes.
+                            </p>
+
                             <div className="space-y-4">
-                                <div>
-                                    <h3 className="font-medium mb-2">Agnosticisme technologique</h3>
-                                    <p className="text-sm text-muted-foreground">
-                                        Nous sélectionnons les modèles et frameworks en fonction de vos contraintes : confidentialité, coût, latence, intégration SI, exigences RGPD.
-                                    </p>
+                                <div className="flex items-start gap-3">
+                                    <div className="flex-shrink-0 mt-0.5">
+                                        <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center">
+                                            <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
+                                        </div>
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="text-sm font-medium mb-1">Chiffrement des données</h3>
+                                        <p className="text-xs text-muted-foreground">Chiffrement end-to-end de toutes les communications et données sensibles</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3 className="font-medium mb-2">Tests rigoureux</h3>
-                                    <p className="text-sm text-muted-foreground">
-                                        Chaque agent est testé sur des scénarios réels et edge cases avant déploiement. Nous mesurons la qualité des outputs, la latence et les coûts.
-                                    </p>
+
+                                <div className="flex items-start gap-3">
+                                    <div className="flex-shrink-0 mt-0.5">
+                                        <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center">
+                                            <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
+                                        </div>
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="text-sm font-medium mb-1">Conformité RGPD</h3>
+                                        <p className="text-xs text-muted-foreground">Respect total des réglementations européennes sur la protection des données</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3 className="font-medium mb-2">Documentation complète</h3>
-                                    <p className="text-sm text-muted-foreground">
-                                        Architecture documentée, spécifications techniques, guides d&apos;exploitation et runbooks pour garantir la maintenabilité.
-                                    </p>
+
+                                <div className="flex items-start gap-3">
+                                    <div className="flex-shrink-0 mt-0.5">
+                                        <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center">
+                                            <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
+                                        </div>
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="text-sm font-medium mb-1">Contrôles d&apos;accès</h3>
+                                        <p className="text-xs text-muted-foreground">Gestion granulaire des permissions et authentification multi-facteurs</p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-3">
+                                    <div className="flex-shrink-0 mt-0.5">
+                                        <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center">
+                                            <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
+                                        </div>
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="text-sm font-medium mb-1">Audit & Traçabilité</h3>
+                                        <p className="text-xs text-muted-foreground">Logs détaillés de toutes les actions et décisions des agents IA</p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-3">
+                                    <div className="flex-shrink-0 mt-0.5">
+                                        <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center">
+                                            <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
+                                        </div>
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="text-sm font-medium mb-1">Tests de sécurité</h3>
+                                        <p className="text-xs text-muted-foreground">Protection contre les injections de prompts et autres vulnérabilités</p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-3">
+                                    <div className="flex-shrink-0 mt-0.5">
+                                        <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center">
+                                            <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
+                                        </div>
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="text-sm font-medium mb-1">Résilience des données</h3>
+                                        <p className="text-xs text-muted-foreground">Sauvegardes automatiques et plan de reprise d&apos;activité</p>
+                                    </div>
                                 </div>
                             </div>
-                        </CardContent>
-                    </Card>
+                        </div>
+                    </AnimationContainer>
+                </div>
+
+                <AnimationContainer delay={0.9}>
+                    <div className="mb-16 rounded-lg bg-gradient-to-br from-zinc-900 to-black border border-zinc-800 p-12">
+                        <div className="grid md:grid-cols-2 gap-12 items-center">
+                            <div>
+                                <div className="mb-4">
+                                    <MagicBadge title="Notre approche" />
+                                </div>
+                                <h2 className="text-3xl font-medium mb-4 text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">
+                                    Excellence en ingénierie agentique
+                                </h2>
+                                <p className="text-muted-foreground mb-6">
+                                    Nous combinons expertise technique, rigueur méthodologique et technologies de pointe pour délivrer des solutions d&apos;IA agentique fiables et performantes.
+                                </p>
+                                <div className="space-y-3 text-sm text-muted-foreground">
+                                    <div className="flex items-start gap-2">
+                                        <span className="text-[#0071dc] mt-1">✓</span>
+                                        <span>Agnosticisme technologique pour s&apos;adapter à vos contraintes</span>
+                                    </div>
+                                    <div className="flex items-start gap-2">
+                                        <span className="text-[#0071dc] mt-1">✓</span>
+                                        <span>Tests rigoureux sur scénarios réels et edge cases</span>
+                                    </div>
+                                    <div className="flex items-start gap-2">
+                                        <span className="text-[#0071dc] mt-1">✓</span>
+                                        <span>Documentation complète et guides d&apos;exploitation</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex items-center justify-center">
+                                <div className="text-center">
+                                    <div className="inline-block px-6 py-4 rounded-lg bg-white/5 border border-white/10">
+                                        <p className="text-sm text-muted-foreground mb-2">Propulsé par</p>
+                                        <div className="flex items-center gap-4 justify-center">
+                                            <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">
+                                                OpenAI
+                                            </span>
+                                            <span className="text-muted-foreground">•</span>
+                                            <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">
+                                                Anthropic
+                                            </span>
+                                        </div>
+                                        <p className="text-xs text-muted-foreground mt-2">
+                                            et autres modèles de pointe
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </AnimationContainer>
 
-                <AnimationContainer delay={0.8}>
+                <AnimationContainer delay={1.0}>
                     <div className="flex flex-col items-center justify-center text-center py-12">
                         <h2 className="text-3xl font-medium mb-4">Discutons de votre projet</h2>
                         <p className="text-muted-foreground mb-6 max-w-2xl">
                             Décrivez-nous votre cas d&apos;usage et nous vous expliquerons comment notre expertise peut s&apos;appliquer à votre contexte.
                         </p>
-                        <Button asChild size="lg">
-                            <Link href="/contact">
-                                Parler à un expert
-                                <ArrowRightIcon className="w-4 h-4 ml-2" />
-                            </Link>
-                        </Button>
+                        <div className="flex gap-4">
+                            <Button asChild size="lg">
+                                <Link href="/contact">
+                                    Décrivez-nous votre besoin
+                                    <ArrowRightIcon className="w-4 h-4 ml-2" />
+                                </Link>
+                            </Button>
+                            <Button asChild size="lg" variant="outline">
+                                <Link href="https://calix.novalitix.com/novalitix/15min" target="_blank" rel="noopener noreferrer">
+                                    Réserver un appel gratuit
+                                </Link>
+                            </Button>
+                        </div>
                     </div>
                 </AnimationContainer>
             </MaxWidthWrapper>

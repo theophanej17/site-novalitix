@@ -13,16 +13,18 @@
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
+    /* Novalitix Blue: #0071dc */
+    --primary: 210 100% 43%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
+    /* Novalitix Yellow: #fcb239 */
+    --secondary: 38 97% 60%;
+    --secondary-foreground: 0 0% 9%;
 
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
 
-    --accent: 0 0% 14.9%;
+    --accent: 210 100% 43%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -30,7 +32,7 @@
 
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
+    --ring: 210 100% 43%;
 
     --radius: 0.5rem;
   }
@@ -73,7 +75,7 @@
 }
 
 ::selection {
-  background-color: rgba(168, 85, 247, 0.2);
+  background-color: rgba(0, 113, 220, 0.2);
   color: hsl(var(--foreground));
 }
 
@@ -102,7 +104,7 @@ html, body {
 }
 
 .gradient {
-  background: conic-gradient(from 230.29deg at 51.63% 52.16%, rgb(36, 0, 255) 0deg, rgb(0, 135, 255) 67.5deg, rgb(108, 39, 157) 198.75deg, rgb(24, 38, 163) 251.25deg, rgb(54, 103, 196) 301.88deg, rgb(105, 30, 255) 360deg);
+  background: conic-gradient(from 230.29deg at 51.63% 52.16%, #0071dc 0deg, #fcb239 67.5deg, #0071dc 198.75deg, #fcb239 251.25deg, #0071dc 301.88deg, #fcb239 360deg);
 }
 
 .not-found {

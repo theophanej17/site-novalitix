@@ -14,7 +14,7 @@ const SolutionsPage = () => {
                     <div className="flex flex-col items-center justify-center w-full text-center py-12">
                         <MagicBadge title="Solutions" />
                         <h1 className="text-foreground text-center py-6 text-4xl font-medium tracking-normal text-balance sm:text-5xl md:text-6xl !leading-[1.15] w-full font-heading">
-                            Solutions agentiques <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text">
+                            Solutions agentiques <span className="text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">
                                 adaptées à vos cas d&apos;usage
                             </span>
                         </h1>
@@ -27,7 +27,7 @@ const SolutionsPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-16">
                     <AnimationContainer delay={0.2}>
                         <MagicCard className="h-full p-8">
-                            <BrainCircuitIcon className="w-12 h-12 text-violet-500 mb-4" />
+                            <BrainCircuitIcon className="w-12 h-12 text-[#0071dc] mb-4" />
                             <CardHeader className="p-0 mb-4">
                                 <CardTitle className="text-2xl">Agents conversationnels</CardTitle>
                                 <CardDescription className="text-base">
@@ -50,7 +50,7 @@ const SolutionsPage = () => {
 
                     <AnimationContainer delay={0.3}>
                         <MagicCard className="h-full p-8">
-                            <LayersIcon className="w-12 h-12 text-fuchsia-500 mb-4" />
+                            <LayersIcon className="w-12 h-12 text-[#fcb239] mb-4" />
                             <CardHeader className="p-0 mb-4">
                                 <CardTitle className="text-2xl">Agents d&apos;analyse</CardTitle>
                                 <CardDescription className="text-base">
@@ -73,7 +73,7 @@ const SolutionsPage = () => {
 
                     <AnimationContainer delay={0.4}>
                         <MagicCard className="h-full p-8">
-                            <CodeIcon className="w-12 h-12 text-blue-500 mb-4" />
+                            <CodeIcon className="w-12 h-12 text-[#0071dc] mb-4" />
                             <CardHeader className="p-0 mb-4">
                                 <CardTitle className="text-2xl">Systèmes multi-agents</CardTitle>
                                 <CardDescription className="text-base">
@@ -96,7 +96,7 @@ const SolutionsPage = () => {
 
                     <AnimationContainer delay={0.5}>
                         <MagicCard className="h-full p-8">
-                            <ShieldCheckIcon className="w-12 h-12 text-green-500 mb-4" />
+                            <ShieldCheckIcon className="w-12 h-12 text-[#fcb239] mb-4" />
                             <CardHeader className="p-0 mb-4">
                                 <CardTitle className="text-2xl">Agents sur mesure</CardTitle>
                                 <CardDescription className="text-base">

@@ -50,13 +50,13 @@ export const NAV_LINKS = [
             {
                 title: "Blog",
                 tagline: "Articles sur l'ingénierie agentique",
-                href: "/resources/blog",
+                href: "https://blog.novalitix.com/",
                 icon: NewspaperIcon,
             },
             {
-                title: "Guides",
-                tagline: "Documentation et ressources",
-                href: "/resources/guides",
+                title: "Events",
+                tagline: "Événements et webinaires",
+                href: "https://event.novalitix.com",
                 icon: BookOpenIcon,
             },
         ]

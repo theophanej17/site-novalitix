@@ -15,7 +15,7 @@ const ContactPage = () => {
                     <div className="flex flex-col items-center justify-center w-full text-center py-12">
                         <MagicBadge title="Contact" />
                         <h1 className="text-foreground text-center py-6 text-4xl font-medium tracking-normal text-balance sm:text-5xl md:text-6xl !leading-[1.15] w-full font-heading">
-                            Parlez-nous de votre <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text">
+                            Parlez-nous de votre <span className="text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">
                                 besoin
                             </span>
                         </h1>
@@ -31,7 +31,7 @@ const ContactPage = () => {
                             <CardHeader className="p-0 mb-6">
                                 <CardTitle className="text-2xl">Formulaire de contact</CardTitle>
                                 <CardDescription>
-                                    Remplissez ce formulaire et nous vous répondrons dans les plus brefs délais.
+                                    Remplissez ce formulaire et nous vous répondrons en 24h maximum.
                                 </CardDescription>
                             </CardHeader>
                             <CardContent className="p-0">
@@ -46,26 +46,20 @@ const ContactPage = () => {
                                             <Input id="email" type="email" placeholder="john@exemple.com" required />
                                         </div>
                                     </div>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                        <div className="space-y-2">
-                                            <Label htmlFor="company">Entreprise *</Label>
-                                            <Input id="company" placeholder="Votre entreprise" required />
-                                        </div>
-                                        <div className="space-y-2">
-                                            <Label htmlFor="phone">Téléphone</Label>
-                                            <Input id="phone" type="tel" placeholder="+33 6 12 34 56 78" />
-                                        </div>
+                                    <div className="space-y-2">
+                                        <Label htmlFor="company">Entreprise</Label>
+                                        <Input id="company" placeholder="Votre entreprise (optionnel)" />
                                     </div>
                                     <div className="space-y-2">
                                         <Label htmlFor="activity">Votre activité *</Label>
                                         <Input id="activity" placeholder="Décrivez brièvement votre activité" required />
                                     </div>
                                     <div className="space-y-2">
-                                        <Label htmlFor="process">Processus à automatiser *</Label>
+                                        <Label htmlFor="process">Décrivez votre besoin *</Label>
                                         <Textarea
                                             id="process"
-                                            placeholder="Quel processus souhaitez-vous automatiser ?"
-                                            rows={3}
+                                            placeholder="Décrivez votre besoin en détail..."
+                                            rows={5}
                                             required
                                         />
                                     </div>
@@ -96,7 +90,7 @@ const ContactPage = () => {
                             </CardHeader>
                             <CardContent className="p-0 space-y-4">
                                 <div className="flex items-start gap-3">
-                                    <MailIcon className="w-5 h-5 text-violet-500 mt-0.5" />
+                                    <MailIcon className="w-5 h-5 text-[#0071dc] mt-0.5" />
                                     <div>
                                         <p className="font-medium">Email</p>
                                         <a href="mailto:contact@novalitix.com" className="text-muted-foreground hover:text-foreground">
@@ -104,34 +98,20 @@ const ContactPage = () => {
                                         </a>
                                     </div>
                                 </div>
-                                <div className="flex items-start gap-3">
-                                    <PhoneIcon className="w-5 h-5 text-fuchsia-500 mt-0.5" />
-                                    <div>
-                                        <p className="font-medium">Téléphone</p>
-                                        <p className="text-muted-foreground">+33 (0)1 XX XX XX XX</p>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <MapPinIcon className="w-5 h-5 text-blue-500 mt-0.5" />
-                                    <div>
-                                        <p className="font-medium">Localisation</p>
-                                        <p className="text-muted-foreground">France</p>
-                                    </div>
-                                </div>
                             </CardContent>
                         </Card>
 
-                        <Card className="p-6 bg-gradient-to-br from-violet-500/10 to-fuchsia-500/10 border-violet-500/20">
+                        <Card className="p-6 bg-gradient-to-br from-[#0071dc]/10 to-[#fcb239]/10 border-[#0071dc]/20">
                             <CardHeader className="p-0 mb-4">
-                                <CardTitle className="text-xl">Besoin d&apos;aide ?</CardTitle>
+                                <CardTitle className="text-xl">Préférez un appel ?</CardTitle>
                             </CardHeader>
                             <CardContent className="p-0">
                                 <p className="text-sm text-muted-foreground mb-4">
-                                    Consultez notre documentation et nos ressources pour en savoir plus sur nos solutions agentiques.
+                                    Réservez un appel gratuit de 15 minutes pour discuter de votre projet.
                                 </p>
                                 <Button variant="outline" asChild className="w-full">
-                                    <a href="/resources/blog">
-                                        Voir les ressources
+                                    <a href="https://calix.novalitix.com/novalitix/15min" target="_blank" rel="noopener noreferrer">
+                                        Réserver un appel
                                     </a>
                                 </Button>
                             </CardContent>

@@ -14,7 +14,7 @@ export default function SystemesMultiAgentsPage() {
                         <CodeIcon className="w-3 h-3 mr-1" />
                         Solutions IA avancées
                     </Badge>
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text text-transparent">
                         Systèmes multi-agents orchestrés
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foreground max-w-3xl">
@@ -27,31 +27,31 @@ export default function SystemesMultiAgentsPage() {
             {/* Hero Visual Section */}
             <AnimationContainer delay={0.2}>
                 <div className="mb-20">
-                    <Card className="p-8 bg-gradient-to-br from-violet-500/10 to-fuchsia-500/10 border-violet-500/20">
+                    <Card className="p-8 bg-gradient-to-br from-[#0071dc]/10 to-[#fcb239]/10 border-[#0071dc]/20">
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                             <div className="flex flex-col items-center text-center p-6">
-                                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center mb-4">
+                                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#0071dc] to-[#fcb239] flex items-center justify-center mb-4">
                                     <NetworkIcon className="w-8 h-8 text-white" />
                                 </div>
                                 <h3 className="text-2xl font-bold mb-2">5-20</h3>
                                 <p className="text-sm text-muted-foreground">Agents par système</p>
                             </div>
                             <div className="flex flex-col items-center text-center p-6">
-                                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center mb-4">
+                                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#0071dc] to-[#fcb239] flex items-center justify-center mb-4">
                                     <ZapIcon className="w-8 h-8 text-white" />
                                 </div>
                                 <h3 className="text-2xl font-bold mb-2">10x</h3>
                                 <p className="text-sm text-muted-foreground">Complexité gérée vs agent seul</p>
                             </div>
                             <div className="flex flex-col items-center text-center p-6">
-                                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center mb-4">
+                                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#0071dc] to-[#fcb239] flex items-center justify-center mb-4">
                                     <WorkflowIcon className="w-8 h-8 text-white" />
                                 </div>
                                 <h3 className="text-2xl font-bold mb-2">100%</h3>
                                 <p className="text-sm text-muted-foreground">Traçabilité des décisions</p>
                             </div>
                             <div className="flex flex-col items-center text-center p-6">
-                                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center mb-4">
+                                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#0071dc] to-[#fcb239] flex items-center justify-center mb-4">
                                     <RefreshCwIcon className="w-8 h-8 text-white" />
                                 </div>
                                 <h3 className="text-2xl font-bold mb-2">Auto</h3>
@@ -104,23 +104,23 @@ export default function SystemesMultiAgentsPage() {
                                 <h3 className="text-xl font-semibold mb-4 text-green-400">✓ Système multi-agents</h3>
                                 <ul className="space-y-3 text-muted-foreground">
                                     <li className="flex items-start gap-2">
-                                        <CheckCircle2Icon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2Icon className="w-5 h-5 text-[#fcb239] flex-shrink-0 mt-0.5" />
                                         <span>Agents spécialisés par expertise</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <CheckCircle2Icon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2Icon className="w-5 h-5 text-[#fcb239] flex-shrink-0 mt-0.5" />
                                         <span>Orchestration et coordination intelligente</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <CheckCircle2Icon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2Icon className="w-5 h-5 text-[#fcb239] flex-shrink-0 mt-0.5" />
                                         <span>Parallélisation des tâches indépendantes</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <CheckCircle2Icon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2Icon className="w-5 h-5 text-[#fcb239] flex-shrink-0 mt-0.5" />
                                         <span>Workflows complexes avec branchements</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <CheckCircle2Icon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2Icon className="w-5 h-5 text-[#fcb239] flex-shrink-0 mt-0.5" />
                                         <span>Récupération automatique sur échec</span>
                                     </li>
                                 </ul>
@@ -143,8 +143,8 @@ export default function SystemesMultiAgentsPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <Card className="p-6 hover:shadow-lg transition-shadow">
                             <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 rounded-lg bg-violet-500/10 flex items-center justify-center flex-shrink-0">
-                                    <WorkflowIcon className="w-6 h-6 text-violet-500" />
+                                <div className="w-12 h-12 rounded-lg bg-[#0071dc]/10 flex items-center justify-center flex-shrink-0">
+                                    <WorkflowIcon className="w-6 h-6 text-[#0071dc]" />
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-semibold mb-2">Séquentiel supervisé</h3>
@@ -164,8 +164,8 @@ export default function SystemesMultiAgentsPage() {
 
                         <Card className="p-6 hover:shadow-lg transition-shadow">
                             <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 rounded-lg bg-violet-500/10 flex items-center justify-center flex-shrink-0">
-                                    <GitBranchIcon className="w-6 h-6 text-violet-500" />
+                                <div className="w-12 h-12 rounded-lg bg-[#0071dc]/10 flex items-center justify-center flex-shrink-0">
+                                    <GitBranchIcon className="w-6 h-6 text-[#0071dc]" />
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-semibold mb-2">Parallèle avec agrégation</h3>
@@ -185,8 +185,8 @@ export default function SystemesMultiAgentsPage() {
 
                         <Card className="p-6 hover:shadow-lg transition-shadow">
                             <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 rounded-lg bg-violet-500/10 flex items-center justify-center flex-shrink-0">
-                                    <ArrowRightLeftIcon className="w-6 h-6 text-violet-500" />
+                                <div className="w-12 h-12 rounded-lg bg-[#0071dc]/10 flex items-center justify-center flex-shrink-0">
+                                    <ArrowRightLeftIcon className="w-6 h-6 text-[#0071dc]" />
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-semibold mb-2">Hiérarchique à niveaux</h3>
@@ -206,8 +206,8 @@ export default function SystemesMultiAgentsPage() {
 
                         <Card className="p-6 hover:shadow-lg transition-shadow">
                             <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 rounded-lg bg-violet-500/10 flex items-center justify-center flex-shrink-0">
-                                    <RefreshCwIcon className="w-6 h-6 text-violet-500" />
+                                <div className="w-12 h-12 rounded-lg bg-[#0071dc]/10 flex items-center justify-center flex-shrink-0">
+                                    <RefreshCwIcon className="w-6 h-6 text-[#0071dc]" />
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-semibold mb-2">Collaboratif itératif</h3>
@@ -242,8 +242,8 @@ export default function SystemesMultiAgentsPage() {
                         <Card className="p-8">
                             <div className="flex flex-col md:flex-row gap-6">
                                 <div className="w-full md:w-1/3">
-                                    <div className="w-full h-48 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-lg mb-4 flex items-center justify-center">
-                                        <DatabaseIcon className="w-20 h-20 text-blue-500" />
+                                    <div className="w-full h-48 bg-gradient-to-br from-[#0071dc]/20 to-[#fcb239]/20 rounded-lg mb-4 flex items-center justify-center">
+                                        <DatabaseIcon className="w-20 h-20 text-[#0071dc]" />
                                     </div>
                                     <Badge className="mb-3">RH & Recrutement</Badge>
                                     <h3 className="text-2xl font-semibold mb-3">Pipeline de recrutement automatisé</h3>
@@ -255,7 +255,7 @@ export default function SystemesMultiAgentsPage() {
                                     </p>
                                     <div className="space-y-4">
                                         <div className="flex items-start gap-3">
-                                            <div className="w-8 h-8 rounded-full bg-violet-500/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
+                                            <div className="w-8 h-8 rounded-full bg-[#0071dc]/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
                                                 1
                                             </div>
                                             <div className="flex-1">
@@ -264,7 +264,7 @@ export default function SystemesMultiAgentsPage() {
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-3">
-                                            <div className="w-8 h-8 rounded-full bg-violet-500/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
+                                            <div className="w-8 h-8 rounded-full bg-[#0071dc]/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
                                                 2
                                             </div>
                                             <div className="flex-1">
@@ -273,7 +273,7 @@ export default function SystemesMultiAgentsPage() {
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-3">
-                                            <div className="w-8 h-8 rounded-full bg-violet-500/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
+                                            <div className="w-8 h-8 rounded-full bg-[#0071dc]/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
                                                 3
                                             </div>
                                             <div className="flex-1">
@@ -282,7 +282,7 @@ export default function SystemesMultiAgentsPage() {
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-3">
-                                            <div className="w-8 h-8 rounded-full bg-violet-500/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
+                                            <div className="w-8 h-8 rounded-full bg-[#0071dc]/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
                                                 4
                                             </div>
                                             <div className="flex-1">
@@ -292,11 +292,11 @@ export default function SystemesMultiAgentsPage() {
                                         </div>
                                     </div>
                                     <div className="mt-6 pt-6 border-t flex items-center gap-4 text-sm">
-                                        <div className="flex items-center gap-2 text-green-500">
+                                        <div className="flex items-center gap-2 text-[#fcb239]">
                                             <TimerIcon className="w-4 h-4" />
                                             <span>-70% temps screening</span>
                                         </div>
-                                        <div className="flex items-center gap-2 text-green-500">
+                                        <div className="flex items-center gap-2 text-[#fcb239]">
                                             <Users2Icon className="w-4 h-4" />
                                             <span>+40% qualité candidats</span>
                                         </div>
@@ -308,8 +308,8 @@ export default function SystemesMultiAgentsPage() {
                         <Card className="p-8">
                             <div className="flex flex-col md:flex-row gap-6">
                                 <div className="w-full md:w-1/3">
-                                    <div className="w-full h-48 bg-gradient-to-br from-violet-500/20 to-purple-500/20 rounded-lg mb-4 flex items-center justify-center">
-                                        <LayersIcon className="w-20 h-20 text-violet-500" />
+                                    <div className="w-full h-48 bg-gradient-to-br from-[#0071dc]/20 to-[#fcb239]/20 rounded-lg mb-4 flex items-center justify-center">
+                                        <LayersIcon className="w-20 h-20 text-[#0071dc]" />
                                     </div>
                                     <Badge className="mb-3">Assurance</Badge>
                                     <h3 className="text-2xl font-semibold mb-3">Traitement automatique sinistres</h3>
@@ -321,7 +321,7 @@ export default function SystemesMultiAgentsPage() {
                                     </p>
                                     <div className="space-y-4">
                                         <div className="flex items-start gap-3">
-                                            <div className="w-8 h-8 rounded-full bg-violet-500/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
+                                            <div className="w-8 h-8 rounded-full bg-[#0071dc]/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
                                                 1
                                             </div>
                                             <div className="flex-1">
@@ -330,7 +330,7 @@ export default function SystemesMultiAgentsPage() {
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-3">
-                                            <div className="w-8 h-8 rounded-full bg-violet-500/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
+                                            <div className="w-8 h-8 rounded-full bg-[#0071dc]/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
                                                 2
                                             </div>
                                             <div className="flex-1">
@@ -339,7 +339,7 @@ export default function SystemesMultiAgentsPage() {
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-3">
-                                            <div className="w-8 h-8 rounded-full bg-violet-500/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
+                                            <div className="w-8 h-8 rounded-full bg-[#0071dc]/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
                                                 3
                                             </div>
                                             <div className="flex-1">
@@ -348,7 +348,7 @@ export default function SystemesMultiAgentsPage() {
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-3">
-                                            <div className="w-8 h-8 rounded-full bg-violet-500/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
+                                            <div className="w-8 h-8 rounded-full bg-[#0071dc]/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
                                                 4
                                             </div>
                                             <div className="flex-1">
@@ -357,7 +357,7 @@ export default function SystemesMultiAgentsPage() {
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-3">
-                                            <div className="w-8 h-8 rounded-full bg-violet-500/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
+                                            <div className="w-8 h-8 rounded-full bg-[#0071dc]/20 flex items-center justify-center flex-shrink-0 text-xs font-bold">
                                                 5
                                             </div>
                                             <div className="flex-1">
@@ -367,11 +367,11 @@ export default function SystemesMultiAgentsPage() {
                                         </div>
                                     </div>
                                     <div className="mt-6 pt-6 border-t flex items-center gap-4 text-sm">
-                                        <div className="flex items-center gap-2 text-green-500">
+                                        <div className="flex items-center gap-2 text-[#fcb239]">
                                             <TimerIcon className="w-4 h-4" />
                                             <span>3j → 2h traitement</span>
                                         </div>
-                                        <div className="flex items-center gap-2 text-green-500">
+                                        <div className="flex items-center gap-2 text-[#fcb239]">
                                             <ShieldCheckIcon className="w-4 h-4" />
                                             <span>+85% détection fraude</span>
                                         </div>
@@ -397,26 +397,26 @@ export default function SystemesMultiAgentsPage() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div>
                                 <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                                    <CodeIcon className="w-5 h-5 text-violet-500" />
+                                    <CodeIcon className="w-5 h-5 text-[#0071dc]" />
                                     Orchestration
                                 </h3>
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2Icon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2Icon className="w-5 h-5 text-[#fcb239] flex-shrink-0 mt-0.5" />
                                         <div>
                                             <p className="font-medium">LangGraph (Anthropic/LangChain)</p>
                                             <p className="text-sm text-muted-foreground">Graphes d&apos;états pour workflows complexes</p>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2Icon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2Icon className="w-5 h-5 text-[#fcb239] flex-shrink-0 mt-0.5" />
                                         <div>
                                             <p className="font-medium">AutoGen (Microsoft)</p>
                                             <p className="text-sm text-muted-foreground">Conversations multi-agents avec rôles</p>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2Icon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2Icon className="w-5 h-5 text-[#fcb239] flex-shrink-0 mt-0.5" />
                                         <div>
                                             <p className="font-medium">CrewAI</p>
                                             <p className="text-sm text-muted-foreground">Équipes d&apos;agents avec hiérarchie</p>
@@ -427,26 +427,26 @@ export default function SystemesMultiAgentsPage() {
 
                             <div>
                                 <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                                    <BrainCircuitIcon className="w-5 h-5 text-violet-500" />
+                                    <BrainCircuitIcon className="w-5 h-5 text-[#0071dc]" />
                                     Infrastructure
                                 </h3>
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2Icon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2Icon className="w-5 h-5 text-[#fcb239] flex-shrink-0 mt-0.5" />
                                         <div>
                                             <p className="font-medium">Message Queue (RabbitMQ, Kafka)</p>
                                             <p className="text-sm text-muted-foreground">Communication asynchrone entre agents</p>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2Icon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2Icon className="w-5 h-5 text-[#fcb239] flex-shrink-0 mt-0.5" />
                                         <div>
                                             <p className="font-medium">State Management (Redis, PostgreSQL)</p>
                                             <p className="text-sm text-muted-foreground">Mémoire partagée et persistance</p>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2Icon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2Icon className="w-5 h-5 text-[#fcb239] flex-shrink-0 mt-0.5" />
                                         <div>
                                             <p className="font-medium">Monitoring (Prometheus, Grafana)</p>
                                             <p className="text-sm text-muted-foreground">Observabilité complète du système</p>
@@ -461,7 +461,7 @@ export default function SystemesMultiAgentsPage() {
 
             {/* CTA */}
             <AnimationContainer delay={0.6}>
-                <Card className="p-8 md:p-12 bg-gradient-to-br from-violet-500/10 to-fuchsia-500/10 border-violet-500/20 text-center">
+                <Card className="p-8 md:p-12 bg-gradient-to-br from-[#0071dc]/10 to-[#fcb239]/10 border-[#0071dc]/20 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
                         Résolvez vos problèmes complexes
                     </h2>
