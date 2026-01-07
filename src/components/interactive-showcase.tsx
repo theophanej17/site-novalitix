@@ -81,7 +81,7 @@ export function InteractiveShowcase() {
                             border-2 transition-all duration-300
                             ${activeTab === tab.id
                                 ? 'border-[#0071dc] bg-gradient-to-br ' + tab.color + ' shadow-lg shadow-[#0071dc]/20'
-                                : 'border-border/30 bg-background/50 hover:border-border hover:bg-muted/30'
+                                : 'border-border/30 bg-background/50 hover:border-yellow-500 hover:bg-yellow-500/10'
                             }
                         `}
                     >
