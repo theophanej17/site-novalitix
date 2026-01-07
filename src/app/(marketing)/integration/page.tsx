@@ -1,3 +1,4 @@
+"use client";
 import { AnimationContainer, MaxWidthWrapper } from "@/components";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -6,6 +7,8 @@ import MagicCard from "@/components/ui/magic-card";
 import { ArrowRightIcon, DatabaseIcon, GlobeIcon, SettingsIcon, WorkflowIcon } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { InfiniteScroller } from "@/components/ui/InfiniteScroller";
+import { AI_FRAMEWORKS } from "@/utils/constants/misc";
 
 const IntegrationPage = () => {
     return (
@@ -139,209 +142,86 @@ const IntegrationPage = () => {
                     </div>
                 </AnimationContainer>
 
-                <AnimationContainer delay={0.7}>
-                    <div className="py-14 mb-8">
-                        <div className="mx-auto px-4 md:px-8">
-                            <h2 className="text-center text-sm font-medium font-heading text-neutral-400 uppercase mb-8 tracking-wider">
-                                Technologies & Frameworks que nous maîtrisons
+                  <MaxWidthWrapper>
+                <div className="w-full ">
+                    <AnimationContainer delay={0.1}>
+                        <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
+                            <MagicBadge title="Notre Stack Technologique" />
+                            <h2 className="mt-6 text-center font-heading text-xl font-medium !leading-[1.1] text-foreground md:text-3xl lg:text-center">
+                                Les technologies qui propulsent vos agents IA
                             </h2>
-                            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 md:gap-10 max-w-7xl mx-auto">
-                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
-                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
-                                        <Image
-                                            src="https://www.perplexity.ai/favicon.svg"
-                                            alt="Perplexity"
-                                            width={64}
-                                            height={64}
-                                            className="w-full h-full object-contain"
-                                        />
-                                    </div>
-                                    <span className="text-xs font-medium text-center text-muted-foreground">Perplexity</span>
-                                </div>
-                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
-                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
-                                        <Image
-                                            src="https://avatars.githubusercontent.com/u/126733545?s=200&v=4"
-                                            alt="LangChain"
-                                            width={64}
-                                            height={64}
-                                            className="w-full h-full object-contain rounded"
-                                        />
-                                    </div>
-                                    <span className="text-xs font-medium text-center text-muted-foreground">LangChain</span>
-                                </div>
-                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
-                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
-                                        <Image
-                                            src="https://openai.com/favicon.ico"
-                                            alt="OpenAI"
-                                            width={64}
-                                            height={64}
-                                            className="w-full h-full object-contain"
-                                        />
-                                    </div>
-                                    <span className="text-xs font-medium text-center text-muted-foreground">OpenAI</span>
-                                </div>
-                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
-                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
-                                        <Image
-                                            src="https://www.anthropic.com/images/icons/safari-pinned-tab.svg"
-                                            alt="Anthropic"
-                                            width={64}
-                                            height={64}
-                                            className="w-full h-full object-contain"
-                                        />
-                                    </div>
-                                    <span className="text-xs font-medium text-center text-muted-foreground">Anthropic</span>
-                                </div>
-                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
-                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
-                                        <Image
-                                            src="https://ollama.com/public/ollama.png"
-                                            alt="Ollama"
-                                            width={64}
-                                            height={64}
-                                            className="w-full h-full object-contain"
-                                        />
-                                    </div>
-                                    <span className="text-xs font-medium text-center text-muted-foreground">Ollama</span>
-                                </div>
-                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
-                                    <div className="w-16 h-16 rounded-lg bg-white/90 flex items-center justify-center p-2">
-                                        <Image
-                                            src="https://n8n.io/favicon.ico"
-                                            alt="n8n"
-                                            width={64}
-                                            height={64}
-                                            className="w-full h-full object-contain"
-                                        />
-                                    </div>
-                                    <span className="text-xs font-medium text-center text-muted-foreground">n8n</span>
-                                </div>
-                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
-                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
-                                        <Image
-                                            src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
-                                            alt="Hugging Face"
-                                            width={64}
-                                            height={64}
-                                            className="w-full h-full object-contain"
-                                        />
-                                    </div>
-                                    <span className="text-xs font-medium text-center text-muted-foreground">Hugging Face</span>
-                                </div>
-                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
-                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
-                                        <Image
-                                            src="https://www.gstatic.com/lamda/images/favicon_v1_150160cddff7f294ce30.svg"
-                                            alt="Google AI"
-                                            width={64}
-                                            height={64}
-                                            className="w-full h-full object-contain"
-                                        />
-                                    </div>
-                                    <span className="text-xs font-medium text-center text-muted-foreground">Google AI</span>
-                                </div>
-                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
-                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
-                                        <Image
-                                            src="https://github.githubassets.com/favicons/favicon.svg"
-                                            alt="GitHub"
-                                            width={64}
-                                            height={64}
-                                            className="w-full h-full object-contain"
-                                        />
-                                    </div>
-                                    <span className="text-xs font-medium text-center text-muted-foreground">GitHub</span>
-                                </div>
-                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
-                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
-                                        <Image
-                                            src="https://sdk.vercel.ai/icon.png"
-                                            alt="Vercel AI"
-                                            width={64}
-                                            height={64}
-                                            className="w-full h-full object-contain"
-                                        />
-                                    </div>
-                                    <span className="text-xs font-medium text-center text-muted-foreground">Vercel AI</span>
-                                </div>
-                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
-                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
-                                        <Image
-                                            src="https://cohere.com/favicon-32x32.png"
-                                            alt="Cohere"
-                                            width={64}
-                                            height={64}
-                                            className="w-full h-full object-contain"
-                                        />
-                                    </div>
-                                    <span className="text-xs font-medium text-center text-muted-foreground">Cohere</span>
-                                </div>
-                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
-                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
-                                        <Image
-                                            src="https://azure.microsoft.com/favicon.ico"
-                                            alt="Azure"
-                                            width={64}
-                                            height={64}
-                                            className="w-full h-full object-contain"
-                                        />
-                                    </div>
-                                    <span className="text-xs font-medium text-center text-muted-foreground">Azure</span>
-                                </div>
-                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
-                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
-                                        <Image
-                                            src="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico"
-                                            alt="AWS Bedrock"
-                                            width={64}
-                                            height={64}
-                                            className="w-full h-full object-contain"
-                                        />
-                                    </div>
-                                    <span className="text-xs font-medium text-center text-muted-foreground">AWS Bedrock</span>
-                                </div>
-                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
-                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
-                                        <Image
-                                            src="https://groq.com/wp-content/uploads/2024/03/PBG-mark1-color.svg"
-                                            alt="Groq"
-                                            width={64}
-                                            height={64}
-                                            className="w-full h-full object-contain"
-                                        />
-                                    </div>
-                                    <span className="text-xs font-medium text-center text-muted-foreground">Groq</span>
-                                </div>
-                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
-                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
-                                        <Image
-                                            src="https://langfuse.com/images/favicon.svg"
-                                            alt="Langfuse"
-                                            width={64}
-                                            height={64}
-                                            className="w-full h-full object-contain"
-                                        />
-                                    </div>
-                                    <span className="text-xs font-medium text-center text-muted-foreground">Langfuse</span>
-                                </div>
-                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
-                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
-                                        <Image
-                                            src="https://replicate.com/favicon.ico"
-                                            alt="Replicate"
-                                            width={64}
-                                            height={64}
-                                            className="w-full h-full object-contain"
-                                        />
-                                    </div>
-                                    <span className="text-xs font-medium text-center text-muted-foreground">Replicate</span>
-                                </div>
-                            </div>
+                            <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
+                                Nous maîtrisons les meilleurs frameworks et plateformes
+                                d&apos;IA du marché pour créer des solutions performantes,
+                                évolutives et adaptées à vos besoins spécifiques.
+                            </p>
                         </div>
+                    </AnimationContainer>
+                    <div className="h-[300px] overflow-y-hidden">
+                        <InfiniteScroller
+                            items={AI_FRAMEWORKS.slice(
+                                0,
+                                Math.ceil(AI_FRAMEWORKS.length / 2)
+                            ).map((framework) => (
+                                <div
+                                    key={framework.name}
+                                    className="w-[120px] h-[120px] flex-shrink-0 p-4 bg-background/50 backdrop-blur-sm rounded-lg border border-border/50 hover:border-primary/50 transition-all"
+                                >
+                                    <div className="relative w-full h-full flex flex-col items-center justify-center gap-2">
+                                        <div className="relative w-16 h-16">
+                                            <Image
+                                                className="w-full h-full object-contain"
+                                                src={framework.logo}
+                                                alt={framework.name}
+                                                width={64}
+                                                height={64}
+                                            />
+                                        </div>
+                                        <p className="text-xs font-medium text-center text-foreground truncate w-full">
+                                            {framework.name}
+                                        </p>
+                                    </div>
+                                </div>
+                            ))}
+                            renderItem={(item) => item}
+                            repeat={3}
+                            direction="horizontal"
+                            className="gap-4 m-5 py-2"
+                        />
+
+                        <InfiniteScroller
+                            scrollDirection="backward"
+                            items={AI_FRAMEWORKS.slice(
+                                Math.ceil(AI_FRAMEWORKS.length / 2)
+                            ).map((framework) => (
+                                <div
+                                    key={framework.name}
+                                    className="w-[120px] h-[120px] flex-shrink-0 p-4 bg-background/50 backdrop-blur-sm rounded-lg border border-border/50 hover:border-primary/50 transition-all"
+                                >
+                                    <div className="relative w-full h-full flex flex-col items-center justify-center gap-2">
+                                        <div className="relative w-16 h-16">
+                                            <Image
+                                                className="w-full h-full object-contain"
+                                                src={framework.logo}
+                                                alt={framework.name}
+                                                width={64}
+                                                height={64}
+                                            />
+                                        </div>
+                                        <p className="text-xs font-medium text-center text-foreground truncate w-full">
+                                            {framework.name}
+                                        </p>
+                                    </div>
+                                </div>
+                            ))}
+                            renderItem={(item) => item}
+                            repeat={3}
+                            direction="horizontal"
+                            className="gap-4 m-5 py-2"
+                        />
                     </div>
-                </AnimationContainer>
+                </div>
+            </MaxWidthWrapper>
 
                 <AnimationContainer delay={0.8}>
                     <div className="flex flex-col items-center justify-center text-center py-12">
