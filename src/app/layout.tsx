@@ -14,7 +14,7 @@ export default function RootLayout({
         <html lang="fr" className="scrollbar">
             <head>
                 <link rel="manifest" href="/site.webmanifest" />
-                <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+                <link rel="icon" href="/favicon.png" type="image/png" />
                 <link rel="alternate icon" href="/favicon.ico" type="image/x-icon" />
             </head>
             <body
