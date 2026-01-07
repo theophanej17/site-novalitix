@@ -29,7 +29,7 @@ const HomePage = () => {
                             </span>
                         </button>
                         <h1 className="text-foreground text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-8xl !leading-[1.15] w-full font-heading">
-                            Des agents IA <span className="text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text inline-bloc">
+                            Des Agents IA <span className="text-transparent bg-gradient-to-r from-[#0071dc] from-0% via-[#0071dc] via-42% via-[#6a8b5c] via-48% to-[#d4a042] to-100% bg-clip-text inline-bloc">
                                 conçus pour des environnements réels
                             </span>
                         </h1>
@@ -45,7 +45,7 @@ const HomePage = () => {
                                     <ArrowRightIcon className="w-4 h-4 ml-2" />
                                 </Link>
                             </Button>
-                            <Button asChild variant="outline">
+                            <Button asChild variant="yellow">
                                 <Link href="https://calix.novalitix.com/novalitix/15min" target="_blank" rel="noopener noreferrer" className="flex items-center">
                                     Réserver un appel gratuit
                                 </Link>
@@ -555,7 +555,7 @@ const HomePage = () => {
                                 <ArrowRightIcon className="w-4 h-4 ml-2" />
                             </Link>
                         </Button>
-                        <Button asChild size="lg" variant="outline">
+                        <Button asChild size="lg" variant="yellow">
                             <Link href="https://calix.novalitix.com/novalitix/15min" target="_blank" rel="noopener noreferrer">
                                 Réserver un appel gratuit
                             </Link>
@@ -583,7 +583,7 @@ const HomePage = () => {
                                         <ArrowRightIcon className="w-4 h-4 ml-2" />
                                     </Link>
                                 </Button>
-                                <Button asChild variant="outline">
+                                <Button asChild variant="yellow">
                                     <Link href="https://calix.novalitix.com/novalitix/15min" target="_blank" rel="noopener noreferrer">
                                         Réserver un appel gratuit
                                     </Link>

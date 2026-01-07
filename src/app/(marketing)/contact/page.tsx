@@ -101,15 +101,15 @@ const ContactPage = () => {
                             </CardContent>
                         </Card>
 
-                        <Card className="p-6 bg-gradient-to-br from-[#0071dc]/10 to-[#fcb239]/10 border-[#0071dc]/20">
+                        <Card className="p-6 bg-gradient-to-br from-yellow-400/90 to-yellow-500/90 border-yellow-500/50">
                             <CardHeader className="p-0 mb-4">
-                                <CardTitle className="text-xl">Préférez un appel ?</CardTitle>
+                                <CardTitle className="text-xl text-neutral-900">Préférez un appel ?</CardTitle>
                             </CardHeader>
                             <CardContent className="p-0">
-                                <p className="text-sm text-muted-foreground mb-4">
+                                <p className="text-sm text-neutral-800 mb-4">
                                     Réservez un appel gratuit de 15 minutes pour discuter de votre projet.
                                 </p>
-                                <Button variant="outline" asChild className="w-full">
+                                <Button variant="outline" asChild className="w-full bg-white hover:bg-[#0071dc] text-neutral-900 hover:text-white border-neutral-900/20 hover:border-[#0071dc] transition-all">
                                     <a href="https://calix.novalitix.com/novalitix/15min" target="_blank" rel="noopener noreferrer">
                                         Réserver un appel
                                     </a>

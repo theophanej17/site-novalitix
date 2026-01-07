@@ -139,7 +139,7 @@ export const PLANS = [
         btn: {
             text: "Get started",
             href: "/auth/sign-up?plan=pro",
-            variant: "purple",
+            variant: "yellow",
         }
     },
     {

@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary: "bg-primary text-primary-foreground hover:bg-primary/90 primary",
-        purple: "bg-[#fcb239] text-white hover:bg-[#fcb239]/80",
+        yellow: "bg-[#ffd700] text-neutral-900 hover:bg-[#ffd700]/90 font-semibold",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         subtle: "bg-subtle text-subtle-foreground hover:bg-subtle/80",
         outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground hover:border-border",

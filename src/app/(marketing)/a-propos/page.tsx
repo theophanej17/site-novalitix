@@ -389,7 +389,7 @@ const AboutPage = () => {
                                     <ArrowRightIcon className="w-4 h-4 ml-2" />
                                 </Link>
                             </Button>
-                            <Button asChild size="lg" variant="outline">
+                            <Button asChild size="lg" variant="yellow">
                                 <Link href="https://calix.novalitix.com/novalitix/15min" target="_blank" rel="noopener noreferrer">
                                     Réserver un appel gratuit
                                 </Link>

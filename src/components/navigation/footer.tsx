@@ -95,7 +95,7 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li className="mt-2">
-                                        <Link href="https://event.novalitix.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-all duration-300">
+                                        <Link href="https://events.novalitix.com/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-all duration-300">
                                             Events
                                         </Link>
                                     </li>

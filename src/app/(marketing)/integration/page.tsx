@@ -38,202 +38,106 @@ const IntegrationPage = () => {
                     </Card>
                 </AnimationContainer>
 
-                <div className="space-y-16 pb-16">
-                    {/* Web apps / Admin tools */}
-                    <AnimationContainer delay={0.3}>
-                        <Card className="overflow-hidden border-border/50 bg-gradient-to-br from-background to-muted/20 hover:border-[#0071dc]/50 transition-all">
-                            <div className="grid md:grid-cols-2 gap-8 p-8 md:p-12">
-                                <div className="flex items-center justify-center bg-gradient-to-br from-[#0071dc]/5 to-transparent rounded-2xl p-8">
-                                    <div className="relative w-full max-w-[280px] aspect-[9/16]">
-                                        <div className="absolute inset-0 bg-gradient-to-br from-[#0071dc]/20 to-[#fcb239]/20 rounded-3xl blur-2xl"></div>
-                                        <div className="relative bg-neutral-900 rounded-3xl border-4 border-neutral-800 overflow-hidden shadow-2xl">
-                                            <div className="aspect-[9/16] bg-gradient-to-br from-[#0071dc]/10 to-background p-6 flex flex-col">
-                                                <div className="flex items-center justify-between mb-8">
-                                                    <div className="text-xs font-medium text-muted-foreground">9:42</div>
-                                                    <div className="flex gap-1">
-                                                        <div className="w-4 h-4 rounded-full bg-[#0071dc]/30"></div>
-                                                        <div className="w-4 h-4 rounded-full bg-[#fcb239]/30"></div>
-                                                    </div>
-                                                </div>
-                                                <div className="flex-1 flex flex-col justify-center gap-4">
-                                                    <div className="bg-card/50 backdrop-blur rounded-2xl p-4 border border-border/50">
-                                                        <GlobeIcon className="w-8 h-8 text-[#0071dc] mb-2" />
-                                                        <div className="text-xs font-medium mb-1">Dashboard</div>
-                                                        <div className="text-[10px] text-muted-foreground">Admin panel</div>
-                                                    </div>
-                                                    <div className="bg-card/50 backdrop-blur rounded-2xl p-4 border border-border/50">
-                                                        <div className="h-2 w-full bg-[#0071dc]/20 rounded-full mb-2">
-                                                            <div className="h-2 w-2/3 bg-gradient-to-r from-[#0071dc] to-[#fcb239] rounded-full"></div>
-                                                        </div>
-                                                        <div className="text-[10px] text-muted-foreground">Performance</div>
-                                                    </div>
+                {/* Integration Types Section */}
+                <AnimationContainer delay={0.3}>
+                    <div className="pb-16">
+                        <div className="grid lg:grid-cols-2 gap-12 items-center">
+                            {/* Left side - Phone mockup */}
+                            <div className="flex items-center justify-center">
+                                <div className="relative w-full max-w-[300px] aspect-[9/16]">
+                                    <div className="absolute inset-0 bg-gradient-to-br from-[#0071dc]/20 to-[#fcb239]/20 rounded-3xl blur-3xl"></div>
+                                    <div className="relative bg-neutral-900 rounded-[3rem] border-[6px] border-neutral-800 overflow-hidden shadow-2xl">
+                                        <div className="aspect-[9/16] bg-gradient-to-br from-neutral-900 to-neutral-950 p-6 flex flex-col">
+                                            {/* Status bar */}
+                                            <div className="flex items-center justify-between mb-8">
+                                                <div className="text-xs font-medium text-muted-foreground">9:42</div>
+                                                <div className="flex gap-1">
+                                                    <div className="w-4 h-4 rounded-full bg-[#0071dc]/30"></div>
+                                                    <div className="w-4 h-4 rounded-full bg-[#fcb239]/30"></div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="flex flex-col justify-center">
-                                    <div className="inline-flex items-center gap-2 mb-4">
-                                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#0071dc]/20 to-[#0071dc]/5 flex items-center justify-center border border-[#0071dc]/30">
-                                            <GlobeIcon className="w-5 h-5 text-[#0071dc]" />
-                                        </div>
-                                    </div>
-                                    <h3 className="text-2xl md:text-3xl font-medium mb-4">Web apps / Admin tools</h3>
-                                    <p className="text-base text-muted-foreground mb-4">
-                                        Interfaces utilisateur pour interagir avec vos agents
-                                    </p>
-                                    <p className="text-sm text-muted-foreground">
-                                        Dashboards, interfaces conversationnelles, outils d&apos;administration pour gérer et monitorer vos agents IA en temps réel.
-                                    </p>
-                                </div>
-                            </div>
-                        </Card>
-                    </AnimationContainer>
 
-                    {/* APIs internes */}
-                    <AnimationContainer delay={0.4}>
-                        <Card className="overflow-hidden border-border/50 bg-gradient-to-br from-background to-muted/20 hover:border-[#fcb239]/50 transition-all">
-                            <div className="grid md:grid-cols-2 gap-8 p-8 md:p-12">
-                                <div className="flex items-center justify-center bg-gradient-to-br from-[#fcb239]/5 to-transparent rounded-2xl p-8">
-                                    <div className="relative w-full max-w-[320px]">
-                                        <div className="absolute inset-0 bg-gradient-to-br from-[#fcb239]/20 to-[#0071dc]/20 rounded-2xl blur-2xl"></div>
-                                        <div className="relative bg-neutral-900 rounded-2xl border border-neutral-800 overflow-hidden shadow-2xl p-6">
-                                            <div className="space-y-3">
-                                                <div className="flex items-center gap-3">
-                                                    <div className="w-2 h-2 rounded-full bg-[#fcb239]"></div>
-                                                    <div className="text-xs font-mono text-muted-foreground">POST /api/agents</div>
+                                            {/* Content */}
+                                            <div className="flex-1 flex flex-col justify-center gap-4">
+                                                <div className="bg-card/50 backdrop-blur rounded-2xl p-4 border border-border/50">
+                                                    <GlobeIcon className="w-8 h-8 text-[#0071dc] mb-2" />
+                                                    <div className="text-xs font-medium mb-1">Dashboard</div>
+                                                    <div className="text-[10px] text-muted-foreground">Admin panel</div>
                                                 </div>
-                                                <div className="bg-card/30 rounded-lg p-3 border border-border/30 font-mono text-[10px] text-muted-foreground">
-                                                    <div className="text-[#fcb239]">{`{`}</div>
-                                                    <div className="pl-3">&quot;action&quot;: &quot;analyze&quot;,</div>
-                                                    <div className="pl-3">&quot;data&quot;: {`{...}`}</div>
-                                                    <div className="text-[#fcb239]">{`}`}</div>
+                                                <div className="bg-card/50 backdrop-blur rounded-2xl p-4 border border-border/50">
+                                                    <div className="h-2 w-full bg-[#0071dc]/20 rounded-full mb-2">
+                                                        <div className="h-2 w-2/3 bg-gradient-to-r from-[#0071dc] to-[#fcb239] rounded-full"></div>
+                                                    </div>
+                                                    <div className="text-[10px] text-muted-foreground">Performance</div>
                                                 </div>
-                                                <div className="flex items-center justify-between pt-2">
-                                                    <SettingsIcon className="w-6 h-6 text-[#fcb239]" />
-                                                    <div className="text-[10px] text-[#fcb239] font-medium">REST API</div>
+                                                <div className="bg-card/50 backdrop-blur rounded-2xl p-4 border border-border/50">
+                                                    <SettingsIcon className="w-8 h-8 text-[#fcb239] mb-2" />
+                                                    <div className="text-xs font-medium mb-1">API Status</div>
+                                                    <div className="text-[10px] text-muted-foreground">Connected</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="flex flex-col justify-center">
-                                    <div className="inline-flex items-center gap-2 mb-4">
-                                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#fcb239]/20 to-[#fcb239]/5 flex items-center justify-center border border-[#fcb239]/30">
-                                            <SettingsIcon className="w-5 h-5 text-[#fcb239]" />
-                                        </div>
-                                    </div>
-                                    <h3 className="text-2xl md:text-3xl font-medium mb-4">APIs internes</h3>
-                                    <p className="text-base text-muted-foreground mb-4">
-                                        Points d&apos;entrée pour vos systèmes
-                                    </p>
-                                    <p className="text-sm text-muted-foreground">
-                                        APIs REST ou GraphQL sécurisées pour que vos applications existantes puissent communiquer avec les agents intelligents.
-                                    </p>
-                                </div>
                             </div>
-                        </Card>
-                    </AnimationContainer>
 
-                    {/* CRM / ERP */}
-                    <AnimationContainer delay={0.5}>
-                        <Card className="overflow-hidden border-border/50 bg-gradient-to-br from-background to-muted/20 hover:border-[#0071dc]/50 transition-all">
-                            <div className="grid md:grid-cols-2 gap-8 p-8 md:p-12">
-                                <div className="flex items-center justify-center bg-gradient-to-br from-[#0071dc]/5 to-transparent rounded-2xl p-8">
-                                    <div className="relative w-full max-w-[320px]">
-                                        <div className="absolute inset-0 bg-gradient-to-br from-[#0071dc]/20 to-[#fcb239]/20 rounded-2xl blur-2xl"></div>
-                                        <div className="relative bg-neutral-900 rounded-2xl border border-neutral-800 overflow-hidden shadow-2xl p-6">
-                                            <div className="space-y-4">
-                                                <div className="flex items-center justify-between">
-                                                    <DatabaseIcon className="w-8 h-8 text-[#0071dc]" />
-                                                    <div className="text-xs text-muted-foreground">Sync</div>
-                                                </div>
-                                                <div className="space-y-2">
-                                                    <div className="bg-card/30 rounded-lg p-3 border border-border/30 flex items-center justify-between">
-                                                        <div className="text-xs">Salesforce</div>
-                                                        <div className="w-2 h-2 rounded-full bg-[#0071dc]"></div>
-                                                    </div>
-                                                    <div className="bg-card/30 rounded-lg p-3 border border-border/30 flex items-center justify-between">
-                                                        <div className="text-xs">SAP ERP</div>
-                                                        <div className="w-2 h-2 rounded-full bg-[#0071dc]"></div>
-                                                    </div>
-                                                    <div className="bg-card/30 rounded-lg p-3 border border-border/30 flex items-center justify-between">
-                                                        <div className="text-xs">Dynamics</div>
-                                                        <div className="w-2 h-2 rounded-full bg-[#fcb239]"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                            {/* Right side - Integration types list */}
+                            <div className="space-y-6">
+                                {/* Web apps / Admin tools */}
+                                <div className="flex gap-4 group">
+                                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#0071dc]/20 to-[#0071dc]/5 flex items-center justify-center border border-[#0071dc]/30 group-hover:border-[#0071dc]/60 transition-all flex-shrink-0">
+                                        <GlobeIcon className="w-6 h-6 text-[#0071dc]" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg font-medium mb-2">Web apps / Admin tools</h3>
+                                        <p className="text-sm text-muted-foreground">
+                                            Dashboards, interfaces conversationnelles, outils d&apos;administration pour gérer et monitorer vos agents IA en temps réel.
+                                        </p>
                                     </div>
                                 </div>
-                                <div className="flex flex-col justify-center">
-                                    <div className="inline-flex items-center gap-2 mb-4">
-                                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#0071dc]/20 to-[#0071dc]/5 flex items-center justify-center border border-[#0071dc]/30">
-                                            <DatabaseIcon className="w-5 h-5 text-[#0071dc]" />
-                                        </div>
-                                    </div>
-                                    <h3 className="text-2xl md:text-3xl font-medium mb-4">CRM / ERP / Outils métiers</h3>
-                                    <p className="text-base text-muted-foreground mb-4">
-                                        Connecteurs vers vos systèmes d&apos;information
-                                    </p>
-                                    <p className="text-sm text-muted-foreground">
-                                        Intégration bidirectionnelle avec Salesforce, SAP, Microsoft Dynamics, ou tout autre système d&apos;entreprise existant.
-                                    </p>
-                                </div>
-                            </div>
-                        </Card>
-                    </AnimationContainer>
 
-                    {/* Workflows */}
-                    <AnimationContainer delay={0.6}>
-                        <Card className="overflow-hidden border-border/50 bg-gradient-to-br from-background to-muted/20 hover:border-[#fcb239]/50 transition-all">
-                            <div className="grid md:grid-cols-2 gap-8 p-8 md:p-12">
-                                <div className="flex items-center justify-center bg-gradient-to-br from-[#fcb239]/5 to-transparent rounded-2xl p-8">
-                                    <div className="relative w-full max-w-[320px]">
-                                        <div className="absolute inset-0 bg-gradient-to-br from-[#fcb239]/20 to-[#0071dc]/20 rounded-2xl blur-2xl"></div>
-                                        <div className="relative bg-neutral-900 rounded-2xl border border-neutral-800 overflow-hidden shadow-2xl p-6">
-                                            <div className="space-y-4">
-                                                <div className="flex items-center gap-3">
-                                                    <WorkflowIcon className="w-8 h-8 text-[#fcb239]" />
-                                                    <div className="text-xs font-medium">Automation Flow</div>
-                                                </div>
-                                                <div className="space-y-2">
-                                                    <div className="flex items-center gap-2">
-                                                        <div className="w-8 h-8 rounded-lg bg-[#fcb239]/20 border border-[#fcb239]/30 flex items-center justify-center text-[10px]">1</div>
-                                                        <div className="h-px flex-1 bg-gradient-to-r from-[#fcb239] to-transparent"></div>
-                                                    </div>
-                                                    <div className="flex items-center gap-2">
-                                                        <div className="w-8 h-8 rounded-lg bg-[#fcb239]/20 border border-[#fcb239]/30 flex items-center justify-center text-[10px]">2</div>
-                                                        <div className="h-px flex-1 bg-gradient-to-r from-[#fcb239] to-transparent"></div>
-                                                    </div>
-                                                    <div className="flex items-center gap-2">
-                                                        <div className="w-8 h-8 rounded-lg bg-[#0071dc]/20 border border-[#0071dc]/30 flex items-center justify-center text-[10px]">3</div>
-                                                        <div className="h-px flex-1 bg-gradient-to-r from-[#0071dc] to-transparent"></div>
-                                                    </div>
-                                                </div>
-                                                <div className="text-[10px] text-muted-foreground text-center pt-2">n8n • Zapier • Make</div>
-                                            </div>
-                                        </div>
+                                {/* APIs internes */}
+                                <div className="flex gap-4 group">
+                                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#fcb239]/20 to-[#fcb239]/5 flex items-center justify-center border border-[#fcb239]/30 group-hover:border-[#fcb239]/60 transition-all flex-shrink-0">
+                                        <SettingsIcon className="w-6 h-6 text-[#fcb239]" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg font-medium mb-2">APIs internes</h3>
+                                        <p className="text-sm text-muted-foreground">
+                                            APIs REST ou GraphQL sécurisées pour que vos applications existantes puissent communiquer avec les agents intelligents.
+                                        </p>
                                     </div>
                                 </div>
-                                <div className="flex flex-col justify-center">
-                                    <div className="inline-flex items-center gap-2 mb-4">
-                                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#fcb239]/20 to-[#fcb239]/5 flex items-center justify-center border border-[#fcb239]/30">
-                                            <WorkflowIcon className="w-5 h-5 text-[#fcb239]" />
-                                        </div>
+
+                                {/* CRM / ERP */}
+                                <div className="flex gap-4 group">
+                                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#0071dc]/20 to-[#0071dc]/5 flex items-center justify-center border border-[#0071dc]/30 group-hover:border-[#0071dc]/60 transition-all flex-shrink-0">
+                                        <DatabaseIcon className="w-6 h-6 text-[#0071dc]" />
                                     </div>
-                                    <h3 className="text-2xl md:text-3xl font-medium mb-4">Workflows n8n / Scripts / Automatisations</h3>
-                                    <p className="text-base text-muted-foreground mb-4">
-                                        Orchestration avec vos outils existants
-                                    </p>
-                                    <p className="text-sm text-muted-foreground">
-                                        Intégration transparente dans vos workflows d&apos;automatisation existants : n8n, Zapier, Make, scripts personnalisés.
-                                    </p>
+                                    <div>
+                                        <h3 className="text-lg font-medium mb-2">CRM / ERP / Outils métiers</h3>
+                                        <p className="text-sm text-muted-foreground">
+                                            Intégration bidirectionnelle avec Salesforce, SAP, Microsoft Dynamics, ou tout autre système d&apos;entreprise existant.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Workflows */}
+                                <div className="flex gap-4 group">
+                                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#fcb239]/20 to-[#fcb239]/5 flex items-center justify-center border border-[#fcb239]/30 group-hover:border-[#fcb239]/60 transition-all flex-shrink-0">
+                                        <WorkflowIcon className="w-6 h-6 text-[#fcb239]" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg font-medium mb-2">Workflows n8n / Scripts / Automatisations</h3>
+                                        <p className="text-sm text-muted-foreground">
+                                            Intégration transparente dans vos workflows d&apos;automatisation existants : n8n, Zapier, Make, scripts personnalisés.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </Card>
-                    </AnimationContainer>
-                </div>
+                        </div>
+                    </div>
+                </AnimationContainer>
 
                 <AnimationContainer delay={0.7}>
                     <div className="py-14 mb-8">
@@ -452,7 +356,7 @@ const IntegrationPage = () => {
                                     <ArrowRightIcon className="w-4 h-4 ml-2" />
                                 </Link>
                             </Button>
-                            <Button asChild size="lg" variant="outline">
+                            <Button asChild size="lg" variant="yellow">
                                 <Link href="https://calix.novalitix.com/novalitix/15min" target="_blank" rel="noopener noreferrer">
                                     Réserver un appel gratuit
                                 </Link>

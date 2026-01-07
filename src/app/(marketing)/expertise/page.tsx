@@ -5,6 +5,7 @@ import MagicBadge from "@/components/ui/magic-badge";
 import MagicCard from "@/components/ui/magic-card";
 import { ArrowRightIcon, BrainIcon, ShieldCheckIcon, ZapIcon, NetworkIcon, BoxIcon, ActivityIcon } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const ExpertisePage = () => {
     return (
@@ -152,213 +153,210 @@ const ExpertisePage = () => {
                     </AnimationContainer>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                    {/* Column 1: Technologies */}
-                    <AnimationContainer delay={0.8}>
-                        <div className="h-full rounded-lg bg-black border border-zinc-800 p-8">
-                            <div className="mb-6">
-                                <MagicBadge title="Notre Stack Technologique" />
-                            </div>
-                            <h2 className="text-2xl font-medium mb-3">
-                                Les technologies qui propulsent vos agents IA
+{/* Tech Stack Logos */}
+                <AnimationContainer delay={0.8}>
+                    <div className="py-14 mb-16">
+                        <div className="mx-auto px-4 md:px-8">
+                            <h2 className="text-center text-sm font-medium font-heading text-neutral-400 uppercase mb-8 tracking-wider">
+                                Technologies & Frameworks que nous maîtrisons
                             </h2>
-                            <p className="text-sm text-muted-foreground mb-8">
-                                Nous maîtrisons les meilleurs frameworks et plateformes de l&apos;écosystème IA pour créer des solutions performantes, évolutives et adaptées à vos besoins spécifiques.
-                            </p>
-
-                            <div className="grid grid-cols-4 gap-4">
-                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
-                                    <div className="w-10 h-10 flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">LC</span>
+                            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 md:gap-10 max-w-7xl mx-auto">
+                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
+                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
+                                        <Image
+                                            src="https://www.perplexity.ai/favicon.svg"
+                                            alt="Perplexity"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-contain"
+                                        />
                                     </div>
-                                    <span className="text-[10px] text-center text-muted-foreground">LangChain</span>
+                                    <span className="text-xs font-medium text-center text-muted-foreground">Perplexity</span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
-                                    <div className="w-10 h-10 flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">OAI</span>
+                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
+                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
+                                        <Image
+                                            src="https://avatars.githubusercontent.com/u/126733545?s=200&v=4"
+                                            alt="LangChain"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-contain rounded"
+                                        />
                                     </div>
-                                    <span className="text-[10px] text-center text-muted-foreground">OpenAI</span>
+                                    <span className="text-xs font-medium text-center text-muted-foreground">LangChain</span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
-                                    <div className="w-10 h-10 flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">AI</span>
+                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
+                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
+                                        <Image
+                                            src="https://openai.com/favicon.ico"
+                                            alt="OpenAI"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-contain"
+                                        />
                                     </div>
-                                    <span className="text-[10px] text-center text-muted-foreground">Anthropic</span>
+                                    <span className="text-xs font-medium text-center text-muted-foreground">OpenAI</span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
-                                    <div className="w-10 h-10 flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">V</span>
+                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
+                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
+                                        <Image
+                                            src="https://www.anthropic.com/images/icons/safari-pinned-tab.svg"
+                                            alt="Anthropic"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-contain"
+                                        />
                                     </div>
-                                    <span className="text-[10px] text-center text-muted-foreground">Vercel</span>
+                                    <span className="text-xs font-medium text-center text-muted-foreground">Anthropic</span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
-                                    <div className="w-10 h-10 flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">n8n</span>
+                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
+                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
+                                        <Image
+                                            src="https://ollama.com/public/ollama.png"
+                                            alt="Ollama"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-contain"
+                                        />
                                     </div>
-                                    <span className="text-[10px] text-center text-muted-foreground">n8n</span>
+                                    <span className="text-xs font-medium text-center text-muted-foreground">Ollama</span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
-                                    <div className="w-10 h-10 flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">LI</span>
+                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
+                                    <div className="w-16 h-16 rounded-lg bg-white/90 flex items-center justify-center p-2">
+                                        <Image
+                                            src="https://n8n.io/favicon.ico"
+                                            alt="n8n"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-contain"
+                                        />
                                     </div>
-                                    <span className="text-[10px] text-center text-muted-foreground">LlamaIndex</span>
+                                    <span className="text-xs font-medium text-center text-muted-foreground">n8n</span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
-                                    <div className="w-10 h-10 flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">AG</span>
+                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
+                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
+                                        <Image
+                                            src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+                                            alt="Hugging Face"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-contain"
+                                        />
                                     </div>
-                                    <span className="text-[10px] text-center text-muted-foreground">AutoGen</span>
+                                    <span className="text-xs font-medium text-center text-muted-foreground">Hugging Face</span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
-                                    <div className="w-10 h-10 flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">G</span>
+                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
+                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
+                                        <Image
+                                            src="https://www.gstatic.com/lamda/images/favicon_v1_150160cddff7f294ce30.svg"
+                                            alt="Google AI"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-contain"
+                                        />
                                     </div>
-                                    <span className="text-[10px] text-center text-muted-foreground">Google AI</span>
+                                    <span className="text-xs font-medium text-center text-muted-foreground">Google AI</span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
-                                    <div className="w-10 h-10 flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">▲</span>
+                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
+                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
+                                        <Image
+                                            src="https://github.githubassets.com/favicons/favicon.svg"
+                                            alt="GitHub"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-contain"
+                                        />
                                     </div>
-                                    <span className="text-[10px] text-center text-muted-foreground">Supabase</span>
+                                    <span className="text-xs font-medium text-center text-muted-foreground">GitHub</span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
-                                    <div className="w-10 h-10 flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">P</span>
+                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
+                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
+                                        <Image
+                                            src="https://sdk.vercel.ai/icon.png"
+                                            alt="Vercel AI"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-contain"
+                                        />
                                     </div>
-                                    <span className="text-[10px] text-center text-muted-foreground">Pinecone</span>
+                                    <span className="text-xs font-medium text-center text-muted-foreground">Vercel AI</span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
-                                    <div className="w-10 h-10 flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">AWS</span>
+                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
+                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
+                                        <Image
+                                            src="https://cohere.com/favicon-32x32.png"
+                                            alt="Cohere"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-contain"
+                                        />
                                     </div>
-                                    <span className="text-[10px] text-center text-muted-foreground">AWS</span>
+                                    <span className="text-xs font-medium text-center text-muted-foreground">Cohere</span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
-                                    <div className="w-10 h-10 flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">C</span>
+                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
+                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
+                                        <Image
+                                            src="https://azure.microsoft.com/favicon.ico"
+                                            alt="Azure"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-contain"
+                                        />
                                     </div>
-                                    <span className="text-[10px] text-center text-muted-foreground">CrewAI</span>
+                                    <span className="text-xs font-medium text-center text-muted-foreground">Azure</span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
-                                    <div className="w-10 h-10 flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">LF</span>
+                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
+                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
+                                        <Image
+                                            src="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico"
+                                            alt="AWS Bedrock"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-contain"
+                                        />
                                     </div>
-                                    <span className="text-[10px] text-center text-muted-foreground">Langfuse</span>
+                                    <span className="text-xs font-medium text-center text-muted-foreground">AWS Bedrock</span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
-                                    <div className="w-10 h-10 flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">LS</span>
+                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
+                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
+                                        <Image
+                                            src="https://groq.com/wp-content/uploads/2024/03/PBG-mark1-color.svg"
+                                            alt="Groq"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-contain"
+                                        />
                                     </div>
-                                    <span className="text-[10px] text-center text-muted-foreground">LangSmith</span>
+                                    <span className="text-xs font-medium text-center text-muted-foreground">Groq</span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
-                                    <div className="w-10 h-10 flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">GH</span>
+                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
+                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
+                                        <Image
+                                            src="https://langfuse.com/images/favicon.svg"
+                                            alt="Langfuse"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-contain"
+                                        />
                                     </div>
-                                    <span className="text-[10px] text-center text-muted-foreground">GitHub</span>
+                                    <span className="text-xs font-medium text-center text-muted-foreground">Langfuse</span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-white/5 transition-colors">
-                                    <div className="w-10 h-10 flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#0071dc] to-[#fcb239] bg-clip-text">M</span>
+                                <div className="flex flex-col items-center gap-4 opacity-60 hover:opacity-100 transition-all duration-300">
+                                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center p-4 border border-border/20 hover:border-border/40 transition-all">
+                                        <Image
+                                            src="https://replicate.com/favicon.ico"
+                                            alt="Replicate"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-contain"
+                                        />
                                     </div>
-                                    <span className="text-[10px] text-center text-muted-foreground">Mistral AI</span>
+                                    <span className="text-xs font-medium text-center text-muted-foreground">Replicate</span>
                                 </div>
                             </div>
                         </div>
-                    </AnimationContainer>
-
-                    {/* Column 2: Security */}
-                    <AnimationContainer delay={0.85}>
-                        <div className="h-full rounded-lg bg-black border border-zinc-800 p-8">
-                            <div className="mb-6">
-                                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">
-                                    <ShieldCheckIcon className="w-4 h-4 text-emerald-500" />
-                                    <span className="text-xs font-medium text-emerald-500">Sécurité & Conformité</span>
-                                </div>
-                            </div>
-                            <h2 className="text-2xl font-medium mb-3">
-                                Sécurité en qui vous pouvez <span className="text-transparent bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text">avoir confiance</span>
-                            </h2>
-                            <p className="text-sm text-muted-foreground mb-8">
-                                Nous prenons la sécurité au sérieux. Nos agents IA sont conçus avec des garde-fous robustes et respectent les normes de conformité les plus strictes.
-                            </p>
-
-                            <div className="space-y-4">
-                                <div className="flex items-start gap-3">
-                                    <div className="flex-shrink-0 mt-0.5">
-                                        <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center">
-                                            <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
-                                        </div>
-                                    </div>
-                                    <div className="flex-1">
-                                        <h3 className="text-sm font-medium mb-1">Chiffrement des données</h3>
-                                        <p className="text-xs text-muted-foreground">Chiffrement end-to-end de toutes les communications et données sensibles</p>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-start gap-3">
-                                    <div className="flex-shrink-0 mt-0.5">
-                                        <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center">
-                                            <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
-                                        </div>
-                                    </div>
-                                    <div className="flex-1">
-                                        <h3 className="text-sm font-medium mb-1">Conformité RGPD</h3>
-                                        <p className="text-xs text-muted-foreground">Respect total des réglementations européennes sur la protection des données</p>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-start gap-3">
-                                    <div className="flex-shrink-0 mt-0.5">
-                                        <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center">
-                                            <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
-                                        </div>
-                                    </div>
-                                    <div className="flex-1">
-                                        <h3 className="text-sm font-medium mb-1">Contrôles d&apos;accès</h3>
-                                        <p className="text-xs text-muted-foreground">Gestion granulaire des permissions et authentification multi-facteurs</p>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-start gap-3">
-                                    <div className="flex-shrink-0 mt-0.5">
-                                        <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center">
-                                            <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
-                                        </div>
-                                    </div>
-                                    <div className="flex-1">
-                                        <h3 className="text-sm font-medium mb-1">Audit & Traçabilité</h3>
-                                        <p className="text-xs text-muted-foreground">Logs détaillés de toutes les actions et décisions des agents IA</p>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-start gap-3">
-                                    <div className="flex-shrink-0 mt-0.5">
-                                        <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center">
-                                            <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
-                                        </div>
-                                    </div>
-                                    <div className="flex-1">
-                                        <h3 className="text-sm font-medium mb-1">Tests de sécurité</h3>
-                                        <p className="text-xs text-muted-foreground">Protection contre les injections de prompts et autres vulnérabilités</p>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-start gap-3">
-                                    <div className="flex-shrink-0 mt-0.5">
-                                        <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center">
-                                            <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
-                                        </div>
-                                    </div>
-                                    <div className="flex-1">
-                                        <h3 className="text-sm font-medium mb-1">Résilience des données</h3>
-                                        <p className="text-xs text-muted-foreground">Sauvegardes automatiques et plan de reprise d&apos;activité</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </AnimationContainer>
-                </div>
+                    </div>
+                </AnimationContainer>
 
                 <AnimationContainer delay={0.9}>
                     <div className="mb-16 rounded-lg bg-gradient-to-br from-zinc-900 to-black border border-zinc-800 p-12">
@@ -388,7 +386,7 @@ const ExpertisePage = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex items-center justify-center">
+                            {/* <div className="flex items-center justify-center">
                                 <div className="text-center">
                                     <div className="inline-block px-6 py-4 rounded-lg bg-white/5 border border-white/10">
                                         <p className="text-sm text-muted-foreground mb-2">Propulsé par</p>
@@ -406,7 +404,7 @@ const ExpertisePage = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </AnimationContainer>
@@ -424,7 +422,7 @@ const ExpertisePage = () => {
                                     <ArrowRightIcon className="w-4 h-4 ml-2" />
                                 </Link>
                             </Button>
-                            <Button asChild size="lg" variant="outline">
+                            <Button asChild size="lg" variant="yellow">
                                 <Link href="https://calix.novalitix.com/novalitix/15min" target="_blank" rel="noopener noreferrer">
                                     Réserver un appel gratuit
                                 </Link>

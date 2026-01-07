@@ -56,7 +56,7 @@ export const NAV_LINKS = [
             {
                 title: "Events",
                 tagline: "Événements et webinaires",
-                href: "https://event.novalitix.com",
+                href: "https://events.novalitix.com/",
                 icon: BookOpenIcon,
             },
         ]
