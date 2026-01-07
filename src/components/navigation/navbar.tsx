@@ -13,6 +13,7 @@ import {
 import { cn, NAV_LINKS } from "@/utils";
 import { LucideIcon } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import React, { useEffect, useState } from 'react';
 import MaxWidthWrapper from "../global/max-width-wrapper";
 import MobileNavbar from "./mobile-navbar";
@@ -46,9 +47,14 @@ const Navbar = () => {
                 <MaxWidthWrapper className="flex items-center justify-between">
                     <div className="flex items-center space-x-12">
                         <Link href="/#home">
-                            <span className="text-lg font-bold font-heading !leading-none">
-                                Novalitix
-                            </span>
+                            <Image
+                                src="/assets/Logos/Novalitix_v2_Logo edulearnia_horizontal_en_noir.png"
+                                alt="Novalitix"
+                                width={150}
+                                height={40}
+                                className="h-8 w-auto"
+                                priority
+                            />
                         </Link>
 
                         <NavigationMenu className="hidden lg:flex">

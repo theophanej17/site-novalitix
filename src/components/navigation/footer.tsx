@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import { AnimationContainer, Icons } from "@/components"
-import { TextHoverEffect } from "@/components/ui/text-hover-effect"
+import { AnimationContainer, Icons } from "@/components";
+import { TextHoverEffect } from "@/components/ui/text-hover-effect";
+import Image from "next/image";
 
 const Footer = () => {
     return (
@@ -13,10 +14,18 @@ const Footer = () => {
                 <AnimationContainer delay={0.1}>
                     <div className="flex flex-col items-start justify-start md:max-w-[200px]">
                         <div className="flex items-start">
-                            <Icons.logo className="w-7 h-7" />
+                            {/* <Icons.logo className="w-7 h-7" /> */}
+                            <Image
+                                src="/assets/Logos/Novalitix_v2_image Logo edulearnia_horizontal_en_noir.png"
+                                alt="Novalitix"
+                                width={150}
+                                height={40}
+                                className="h-8 w-auto"
+                                priority
+                            />
                         </div>
                         <p className="text-muted-foreground mt-4 text-sm text-start">
-                            Des agents IA conçus pour des environnements réels.
+                            Des Agents IA conçus pour des environnements réels.
                         </p>
                     </div>
                 </AnimationContainer>
