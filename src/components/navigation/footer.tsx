@@ -18,8 +18,8 @@ const Footer = () => {
                             <Image
                                 src="/assets/Logos/Novalitix_v2_image Logo edulearnia_horizontal_en_noir.png"
                                 alt="Novalitix"
-                                width={150}
-                                height={40}
+                                width={250}
+                                height={60}
                                 className="h-8 w-auto"
                                 priority
                             />
